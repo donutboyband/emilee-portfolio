@@ -1,14 +1,22 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute } from "@tanstack/react-router";
+import Hero from "../components/Hero";
 
-export const Route = createFileRoute('/')({
+export const Route = createFileRoute("/")({
   component: Index,
-})
+});
 
 function Index() {
-
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center">
-     
+    <div className="w-full bg-white text-black">
+      <Hero />
+
+      {/* Anchor targets for nav links */}
+      <section id="featured" className="sr-only">
+        Featured work
+      </section>
+      <section id="about" className="sr-only">
+        About
+      </section>
     </div>
-  )
+  );
 }
