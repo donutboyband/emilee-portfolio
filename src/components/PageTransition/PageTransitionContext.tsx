@@ -28,6 +28,12 @@ export function PageTransitionProvider({ children }: { children: React.ReactNode
 
     // Skip animation on mobile (drawer has its own transition) or if user prefers reduced motion
     if (prefersReducedMotion || isMobile) {
+      // Scroll to top before navigation on mobile
+      if (lenis) {
+        lenis.scrollTo(0, { immediate: true });
+      } else {
+        window.scrollTo(0, 0);
+      }
       navigate({ to });
       return;
     }
@@ -35,7 +41,7 @@ export function PageTransitionProvider({ children }: { children: React.ReactNode
     navigationRef.current = to;
     setPendingNavigation(to);
     setIsTransitioning(true);
-  }, [navigate]);
+  }, [navigate, lenis]);
 
   useEffect(() => {
     if (!isTransitioning) return;
