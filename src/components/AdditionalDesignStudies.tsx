@@ -6,8 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // Sofwave section videos (still using Figma paths)
-const sofwaveVideo1 = "/_videos/v1/6e4fe88b6b5bfbbdec103cf4eb6257ae5545a071";
-const sofwaveVideo2 = "/_videos/v1/3c4432cdceb7e9de1e49459537aa78ef351653d8";
+const sofwaveVideo1 = "/assets/videos/sofwave master edit.mp4";
+const sofwaveVideo2 = "/assets/videos/Comp 1.mp4";
 
 // Sofwave section images
 const sofwaveImg1 = "/assets/26bd70e8b8311f4998c69676c4ab6fd05950c2c1.png";
@@ -163,6 +163,17 @@ export default function AdditionalDesignStudies() {
               />
             </div>
           </div>
+          <div className="section-text px-6 md:px-10 mt-8">
+            <div className="text-[9px] tracking-[0.72px] uppercase max-w-[336px] space-y-1">
+              <p className="leading-[18px]">ROLE: Creative Director (Agency Side)</p>
+              <ul className="list-disc ml-4 space-y-0">
+                <li className="leading-[18px]">Creative direction & concept</li>
+                <li className="leading-[18px]">Photo/video shoot direction & styling</li>
+                <li className="leading-[18px]">Video asset creation & design</li>
+                <li className="leading-[18px]">Micro-landing page design</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* Sunmonster Section */}
@@ -235,17 +246,6 @@ export default function AdditionalDesignStudies() {
                 alt="Sofwave campaign imagery"
                 className="w-full h-full object-cover"
               />
-            </div>
-          </div>
-          <div className="section-text px-6 md:px-10 mt-8">
-            <div className="text-[9px] tracking-[0.72px] uppercase max-w-[336px] space-y-1">
-              <p className="leading-[18px]">ROLE: Creative Director (Agency Side)</p>
-              <ul className="list-disc ml-4 space-y-0">
-                <li className="leading-[18px]">Creative direction & concept</li>
-                <li className="leading-[18px]">Photo/video shoot direction & styling</li>
-                <li className="leading-[18px]">Video asset creation & design</li>
-                <li className="leading-[18px]">Micro-landing page design</li>
-              </ul>
             </div>
           </div>
         </section>
