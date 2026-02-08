@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // Images
-const heroImage = "/assets/54f6855bedbe7ef18b673f1b25b5b874e36c22b8.webp";
+const heroImage = "/assets/nalgene-hero.webp";
 const collageImage = "/assets/e1143953c0161ecaa8cd32734a35ee9e297d2149.webp";
 const retroImage1 = "/assets/dda328a9790a099e49f96775093c5d4b3771c13e.webp";
 const retroImage2 = "/assets/d5a8b32ae4a58d8d85f1c6203a4dbdfd651acc96.webp";
