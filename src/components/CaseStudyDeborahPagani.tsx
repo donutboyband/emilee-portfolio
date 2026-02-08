@@ -294,7 +294,7 @@ export default function CaseStudyDeborahPagani() {
           {/* Challenge Text - left column */}
           <div className="flex flex-col gap-8 w-full lg:w-[368px] lg:shrink-0">
             {/* Beyond the Campaign Framework */}
-            <div className="fade-in text-[10px] tracking-[0.88px] leading-[15px] max-w-[304px]">
+            <div className="fade-in text-[10px] tracking-[0.88px] leading-[15px]">
               <p className="leading-[21px] mb-4">BEYOND THE CAMPAIGN FRAMEWORK</p>
               <p>
                 Rather than a single campaign, the focus was on creating a
@@ -307,7 +307,7 @@ export default function CaseStudyDeborahPagani() {
             </div>
 
             {/* Breaking Through the Noise */}
-            <div className="fade-in text-[10px] tracking-[0.88px] leading-[15px] max-w-[304px]">
+            <div className="fade-in text-[10px] tracking-[0.88px] leading-[15px]">
               <p className="leading-[21px] mb-4">BREAKING THROUGH THE NOISE</p>
               <p>
                 The beauty industry is heavily saturated, so a key challenge for
