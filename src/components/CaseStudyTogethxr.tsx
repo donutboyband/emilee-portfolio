@@ -14,7 +14,7 @@ const keepUpDemo = "/assets/video/keepup_demo.mp4";
 // Images
 const heroImage = "/assets/togethxrhero.webp";
 const btsImage = "/assets/74d5050a6be3a969b2778a35a5e57f8c5dc74bec.webp";
-const conceptsImage = "/assets/Together-Concepts-GIF";
+const conceptsImage = "/assets/Together-Concepts-GIF.png";
 const direction01Image = "/assets/d57a0970620071cbfed3bba2976b444ded853d86.webp";
 const direction01Image2 = "/assets/2195b1c1fe9a200b3ba299a41d702d8eda760e0b.webp";
 const phoneImage1 = "/assets/c4f332c380d6ddee0f6f929b04f5bff629803e32.webp";
