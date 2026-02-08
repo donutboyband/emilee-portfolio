@@ -10,21 +10,21 @@ const sofwaveVideo1 = "/assets/videos/sofwave master edit.mp4";
 const sofwaveVideo2 = "/assets/videos/Comp 1.mp4";
 
 // Sofwave section images
-const sofwaveImg1 = "/assets/26bd70e8b8311f4998c69676c4ab6fd05950c2c1.png";
-const sofwaveImg2 = "/assets/cd6d396b4659742602a9e2aa3acb8ce01df2e2c6.png";
+const sofwaveImg1 = "/assets/26bd70e8b8311f4998c69676c4ab6fd05950c2c1.webp";
+const sofwaveImg2 = "/assets/cd6d396b4659742602a9e2aa3acb8ce01df2e2c6.webp";
 
 // Sunmonster section images
-const sunmonsterLogo1 = "/assets/882d48dd8139345200346ff7ff79fd2f81b8c08b.png";
-const sunmonsterLogo2 = "/assets/22278e746c7134c5b8bd8434d79d9c27cf035255.png";
-const sunmonster10 = "/assets/e4465e067c8633436c4d9ad1d9d304741d9e6313.png";
-const sunmonster09 = "/assets/f276a46c354e53d35030c861331f36d8064bd896.png";
-const sunmonster08 = "/assets/46e4ebeb2279f5923335c8a7249290525f63ed51.png";
-const sunmonster07 = "/assets/2bd8ad1994dd78018d3666e36205fbb1f8db6d0e.png";
+const sunmonsterLogo1 = "/assets/882d48dd8139345200346ff7ff79fd2f81b8c08b.webp";
+const sunmonsterLogo2 = "/assets/22278e746c7134c5b8bd8434d79d9c27cf035255.webp";
+const sunmonster10 = "/assets/e4465e067c8633436c4d9ad1d9d304741d9e6313.webp";
+const sunmonster09 = "/assets/f276a46c354e53d35030c861331f36d8064bd896.webp";
+const sunmonster08 = "/assets/46e4ebeb2279f5923335c8a7249290525f63ed51.webp";
+const sunmonster07 = "/assets/2bd8ad1994dd78018d3666e36205fbb1f8db6d0e.webp";
 
 // Picture Garden section images
-const pgScreenshot = "/assets/c2e6df98523aee586fe4764f7d97e61effa77623.png";
-const pgTagMustard = "/assets/34c421303ed05ccb70faf839b459809b4fea7cc2.png";
-const pgBrandBook = "/assets/4921a9d090bff0172805ebff8315190dde190cb1.png";
+const pgScreenshot = "/assets/c2e6df98523aee586fe4764f7d97e61effa77623.webp";
+const pgTagMustard = "/assets/34c421303ed05ccb70faf839b459809b4fea7cc2.webp";
+const pgBrandBook = "/assets/4921a9d090bff0172805ebff8315190dde190cb1.webp";
 
 // Lagos video
 const lagosVideo = "/assets/videos/lagos.mp4"
@@ -193,14 +193,14 @@ export default function AdditionalDesignStudies() {
                 <img
                   src={sunmonsterLogo1}
                   alt="Sunmonster logo variations"
-                  className="w-full h-full"
+                  className="w-full h-full" loading="lazy"
                 />
               </div>
               <div className="section-media aspect-[2.4/1] overflow-hidden">
                 <img
                   src={sunmonsterLogo2}
                   alt="Sunmonster logo variations"
-                  className="w-full h-full"
+                  className="w-full h-full" loading="lazy"
                 />
               </div>
             </div>
@@ -210,14 +210,14 @@ export default function AdditionalDesignStudies() {
                 <img
                   src={sunmonster10}
                   alt="Sunmonster brand application"
-                  className="w-full h-full"
+                  className="w-full h-full" loading="lazy"
                 />
               </div>
               <div className="section-media aspect-[16/9] overflow-hidden">
                 <img
                   src={sunmonster09}
                   alt="Sunmonster brand application"
-                  className="w-full h-full"
+                  className="w-full h-full" loading="lazy"
                 />
               </div>
             </div>
@@ -226,14 +226,14 @@ export default function AdditionalDesignStudies() {
                 <img
                   src={sunmonster08}
                   alt="Sunmonster brand application"
-                  className="w-full h-full"
+                  className="w-full h-full" loading="lazy"
                 />
               </div>
               <div className="section-media aspect-[16/9] overflow-hidden">
                 <img
                   src={sunmonster07}
                   alt="Sunmonster brand application"
-                  className="w-full h-full"
+                  className="w-full h-full" loading="lazy"
                 />
               </div>
             </div>
@@ -267,14 +267,14 @@ export default function AdditionalDesignStudies() {
                 <img
                   src={pgScreenshot}
                   alt="Picture Garden brand elements"
-                  className="w-full h-full"
+                  className="w-full h-full" loading="lazy"
                 />
               </div>
               <div className="section-media aspect-[3/4] md:aspect-[4/5] overflow-hidden">
                 <img
                   src={pgTagMustard}
                   alt="Picture Garden tag design"
-                  className="w-full h-full"
+                  className="w-full h-full" loading="lazy"
                 />
               </div>
             </div>
@@ -283,7 +283,7 @@ export default function AdditionalDesignStudies() {
               <img
                 src={pgBrandBook}
                   alt="Picture Garden brand book spread"
-                className="w-full h-full"
+                className="w-full h-full" loading="lazy"
               />
             </div>
           </div>

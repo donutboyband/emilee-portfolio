@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import CaseStudyDeborahPagani from "../../components/CaseStudyDeborahPagani";
 
 export const Route = createFileRoute("/case-study/deborah-pagani")({

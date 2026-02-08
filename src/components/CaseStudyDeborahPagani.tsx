@@ -7,34 +7,34 @@ import VideoPlayer from './VideoPlayer';
 gsap.registerPlugin(ScrollTrigger);
 
 // Images
-const heroImage = "/assets/DP-hero.png";
-const fragranceGif = "/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.png";
+const heroImage = "/assets/DP-hero.webp";
+const fragranceGif = "/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.webp";
 
 // Packaging images (masonry grid)
-const packagingImg1 = "/assets/1b4100a98ad510efe33cb9e720b366b9ddf913c2.png"; // Large left
-const packagingImg2 = "/assets/ba443e6ccf5c433c57bf12536f0baa507ee4e10a.png"; // Top middle
-const packagingImg3 = "/assets/307290196c8dc2e479913911503abc4d521f659d.png"; // Middle center
-const packagingImg4 = "/assets/06f4418e3859d7ca2f6fb05a03a0461246d6f490.png"; // Bottom left
-const packagingImg5 = "/assets/0d8eaa36c8d18d21af150ac3595e701a39aea8c5.png"; // Bottom middle
-const packagingImg6 = "/assets/7548773976e07f4ad39046debc08a23ad7ad9c15.png"; // Large right
+const packagingImg1 = "/assets/1b4100a98ad510efe33cb9e720b366b9ddf913c2.webp"; // Large left
+const packagingImg2 = "/assets/ba443e6ccf5c433c57bf12536f0baa507ee4e10a.webp"; // Top middle
+const packagingImg3 = "/assets/307290196c8dc2e479913911503abc4d521f659d.webp"; // Middle center
+const packagingImg4 = "/assets/06f4418e3859d7ca2f6fb05a03a0461246d6f490.webp"; // Bottom left
+const packagingImg5 = "/assets/0d8eaa36c8d18d21af150ac3595e701a39aea8c5.webp"; // Bottom middle
+const packagingImg6 = "/assets/7548773976e07f4ad39046debc08a23ad7ad9c15.webp"; // Large right
 
 // Production images (BTS row)
-const productionImg1 = "/assets/a463f4f469b0fa87488a705fdce555ffa2067617.png";
-const productionImg2 = "/assets/6b0273449d185053adcc2d963368a2ee3b5625ec.png";
-const productionImg3 = "/assets/90ac020425dd282f28c3b70e24cd45667e04d578.png";
-const productionImg4 = "/assets/d34bcc2db0573576bb16e07d2211498ee3a1972e.png";
-const productionImg5 = "/assets/1aff24f3fdec233fbff678bd4957c483a690f22e.png";
-const productionImg6 = "/assets/3468920b285297f8bf86dc220db3a2a4a1483983.png";
+const productionImg1 = "/assets/a463f4f469b0fa87488a705fdce555ffa2067617.webp";
+const productionImg2 = "/assets/6b0273449d185053adcc2d963368a2ee3b5625ec.webp";
+const productionImg3 = "/assets/90ac020425dd282f28c3b70e24cd45667e04d578.webp";
+const productionImg4 = "/assets/d34bcc2db0573576bb16e07d2211498ee3a1972e.webp";
+const productionImg5 = "/assets/1aff24f3fdec233fbff678bd4957c483a690f22e.webp";
+const productionImg6 = "/assets/3468920b285297f8bf86dc220db3a2a4a1483983.webp";
 
 // Rollout images
-const rolloutImg1 = "/assets/10ab78bcdcac204c76b135eccac2e9755c2c3eb0.png";
-const rolloutImg2 = "/assets/a00adf011b8682cb1a20b40f3ccd5186df1ccc02.png";
-const rolloutImg3 = "/assets/bd645f60dc15a8edefaa30f79b1d4514faffadcb.png";
+const rolloutImg1 = "/assets/10ab78bcdcac204c76b135eccac2e9755c2c3eb0.webp";
+const rolloutImg2 = "/assets/a00adf011b8682cb1a20b40f3ccd5186df1ccc02.webp";
+const rolloutImg3 = "/assets/bd645f60dc15a8edefaa30f79b1d4514faffadcb.webp";
 
 // Final section images
-const finalImg1 = "/assets/f586ed9401841bd798cf0e8e0c8d5f64df442ce4.png";
-const finalImg2 = "/assets/d36b7860aaeea0aded1b7b2bccfabd1177a82078.png";
-const finalImg3 = "/assets/ad907cc81db4404bb21216c852fa1f85f2bee151.png";
+const finalImg1 = "/assets/f586ed9401841bd798cf0e8e0c8d5f64df442ce4.webp";
+const finalImg2 = "/assets/d36b7860aaeea0aded1b7b2bccfabd1177a82078.webp";
+const finalImg3 = "/assets/ad907cc81db4404bb21216c852fa1f85f2bee151.webp";
 
 // Videos (still need to be downloaded separately)
 const signUpBannerVideo = "/assets/videos/debpag_micro.mp4";

@@ -6,15 +6,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // Images
-const heroImage = "/assets/54f6855bedbe7ef18b673f1b25b5b874e36c22b8.png";
-const collageImage = "/assets/e1143953c0161ecaa8cd32734a35ee9e297d2149.png";
-const retroImage1 = "/assets/dda328a9790a099e49f96775093c5d4b3771c13e.png";
-const retroImage2 = "/assets/d5a8b32ae4a58d8d85f1c6203a4dbdfd651acc96.png";
-const logoSystemImage = "/assets/d1a216112fd4af77686cf9d2c7383e496eb63b50.png";
-const bottleImage1 = "/assets/e25e1a7ea9706d48d6776b892cd64de12f5583bc.png";
-const bottleImage2 = "/assets/c983f2312c1d6bd4b9717774fe0f9a62855dc88f.png";
-const webMockImage = "/assets/c62971392df1e863eabc2483087ec3d6b1d6673f.png";
-const brochureMockImage = "/assets/9962df6ebcd077688c98df27fcdf8b19c8efa9c9.png";
+const heroImage = "/assets/54f6855bedbe7ef18b673f1b25b5b874e36c22b8.webp";
+const collageImage = "/assets/e1143953c0161ecaa8cd32734a35ee9e297d2149.webp";
+const retroImage1 = "/assets/dda328a9790a099e49f96775093c5d4b3771c13e.webp";
+const retroImage2 = "/assets/d5a8b32ae4a58d8d85f1c6203a4dbdfd651acc96.webp";
+const logoSystemImage = "/assets/d1a216112fd4af77686cf9d2c7383e496eb63b50.webp";
+const bottleImage1 = "/assets/e25e1a7ea9706d48d6776b892cd64de12f5583bc.webp";
+const bottleImage2 = "/assets/c983f2312c1d6bd4b9717774fe0f9a62855dc88f.webp";
+const webMockImage = "/assets/c62971392df1e863eabc2483087ec3d6b1d6673f.webp";
+const brochureMockImage = "/assets/9962df6ebcd077688c98df27fcdf8b19c8efa9c9.webp";
 const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 
@@ -203,7 +203,7 @@ export default function CaseStudyNalgene() {
           <img
             src={collageImage}
             alt="A 75-year culture of hydration"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover" loading="lazy"
           />
         </div>
       </section>
@@ -291,7 +291,7 @@ export default function CaseStudyNalgene() {
           <img
             src={logoSystemImage}
             alt="Nalgene 75th Anniversary logo system"
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover" loading="lazy"
           />
         </div>
       </section>
@@ -323,14 +323,14 @@ export default function CaseStudyNalgene() {
             <img
               src={webMockImage}
               alt="Nalgene website mockup"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover" loading="lazy"
             />
           </div>
           <div className="pair-item overflow-hidden">
             <img
               src={brochureMockImage}
               alt="Nalgene brochure mockup"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover" loading="lazy"
             />
           </div>
         </div>

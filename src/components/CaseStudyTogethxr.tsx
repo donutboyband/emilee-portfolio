@@ -12,15 +12,15 @@ const keepUpMicro = "/assets/videos/keepup_micro.mp4";
 const keepUpDemo = "/assets/video/keepup_demo.mp4";
 
 // Images
-const heroImage = "/assets/togethxrhero.png";
-const btsImage = "/assets/74d5050a6be3a969b2778a35a5e57f8c5dc74bec.png";
-const conceptsImage = "/assets/2185f5df26e264fd54e75a9c3fb05321a2f16e10.png";
-const direction01Image = "/assets/d57a0970620071cbfed3bba2976b444ded853d86.png";
-const direction01Image2 = "/assets/2195b1c1fe9a200b3ba299a41d702d8eda760e0b.png";
-const phoneImage1 = "/assets/c4f332c380d6ddee0f6f929b04f5bff629803e32.png";
-const phoneImage2 = "/assets/b14010e3a0ead6c38a07ccc888beacc1a8b59873.png";
-const phoneImage3 = "/assets/e668e2eb12b0bc7817688a10cea48b00e54531d9.png";
-const finalImage1 = "/assets/84c73b49dae3cc5d70e20386aaed773726d847f0.png";
+const heroImage = "/assets/togethxrhero.webp";
+const btsImage = "/assets/74d5050a6be3a969b2778a35a5e57f8c5dc74bec.webp";
+const conceptsImage = "/assets/2185f5df26e264fd54e75a9c3fb05321a2f16e10.webp";
+const direction01Image = "/assets/d57a0970620071cbfed3bba2976b444ded853d86.webp";
+const direction01Image2 = "/assets/2195b1c1fe9a200b3ba299a41d702d8eda760e0b.webp";
+const phoneImage1 = "/assets/c4f332c380d6ddee0f6f929b04f5bff629803e32.webp";
+const phoneImage2 = "/assets/b14010e3a0ead6c38a07ccc888beacc1a8b59873.webp";
+const phoneImage3 = "/assets/e668e2eb12b0bc7817688a10cea48b00e54531d9.webp";
+const finalImage1 = "/assets/84c73b49dae3cc5d70e20386aaed773726d847f0.webp";
 const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 

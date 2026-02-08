@@ -9,8 +9,8 @@ gsap.registerPlugin(ScrollTrigger);
 const mmBTS = "/assets/videos/mm_bts.mp4";
 const mmTwo = "/assets/videos/mm_two.mp4"
 // Images
-const heroImage = "/assets/343cab8934af33e34f9a29a7629c76689057ac57.png";
-const lifestyleImage = "/assets/cf65c10e851254b63f64e0ca84ff0d8586e0add1.png";
+const heroImage = "/assets/343cab8934af33e34f9a29a7629c76689057ac57.webp";
+const lifestyleImage = "/assets/cf65c10e851254b63f64e0ca84ff0d8586e0add1.webp";
 const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 
@@ -289,7 +289,7 @@ export default function CaseStudyTraditionalMedicinals() {
             <img
               src={lifestyleImage}
               alt="Behind the scenes"
-              className="parallax-image w-full lg:w-[900px] h-auto lg:h-[640px] object-cover"
+              className="parallax-image w-full lg:w-[900px] h-auto lg:h-[640px] object-cover" loading="lazy"
             />
           </div>
         </div>

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useInitialLoader } from "./InitialLoader";
 import gsap from "gsap";
 
-const heroImage = "/assets/bc219d29b05830aea41cdafd0492a59848956872.png";
+const heroImage = "/assets/bc219d29b05830aea41cdafd0492a59848956872.webp";
 
 // Star icons for role labels
 const starCreativeDirector = "/assets/da285ae4164b0300b49d38883e59c7a57c592331.svg";

@@ -7,6 +7,7 @@ interface TransitionLinkProps {
   to: string;
   children: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
   onClick?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
   onMouseEnter?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
   onMouseLeave?: (e: React.MouseEvent<HTMLAnchorElement>) => void;
