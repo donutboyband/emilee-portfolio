@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Images
 const heroImage = "/assets/DP-hero.webp";
-const fragranceGif = "/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.webp";
+const fragranceGif = "/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.png";
 
 // Packaging images (masonry grid)
 const packagingImg1 = "/assets/1b4100a98ad510efe33cb9e720b366b9ddf913c2.webp"; // Large left
