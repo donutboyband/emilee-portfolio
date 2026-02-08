@@ -33,8 +33,8 @@ const rolloutImg3 = "/assets/bd645f60dc15a8edefaa30f79b1d4514faffadcb.webp";
 
 // Final section images
 const finalImg1 = "/assets/f586ed9401841bd798cf0e8e0c8d5f64df442ce4.webp";
-const finalImg2 = "/assets/d36b7860aaeea0aded1b7b2bccfabd1177a82078.webp";
-const finalImg3 = "/assets/ad907cc81db4404bb21216c852fa1f85f2bee151.webp";
+const finalImg2 = "/assets/d36b7860aaeea0aded1b7b2bccfabd1177a82078.png";
+const finalImg3 = "/assets/ad907cc81db4404bb21216c852fa1f85f2bee151.png";
 
 // Videos (still need to be downloaded separately)
 const signUpBannerVideo = "/assets/videos/debpag_micro.mp4";
