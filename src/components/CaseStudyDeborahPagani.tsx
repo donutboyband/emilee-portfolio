@@ -251,7 +251,7 @@ export default function CaseStudyDeborahPagani() {
                   loop
                   muted
                   className="video-reveal w-full max-w-[848px] aspect-auto"
-                  ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                  ariaLabel="Deborah Pagani Beauty sign-up banner animation"
                 />
       </section>
 
@@ -351,7 +351,7 @@ export default function CaseStudyDeborahPagani() {
             <div className="image-reveal flex-1">
               <img
                 src={fragranceGif}
-                alt="Fragrance product"
+                alt="Deborah Pagani Beauty fragrance product showcase"
                 className="w-full h-auto lg:h-[700px] object-cover"
               />
             </div>
@@ -362,7 +362,7 @@ export default function CaseStudyDeborahPagani() {
                   src={launchAdVideo}
                   controls={true}
                   className="video-reveal w-[394px] aspect-auto"
-                  ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                  ariaLabel="Deborah Pagani Beauty product launch advertisement"
                 />
             </div>
           </div>
@@ -387,7 +387,7 @@ export default function CaseStudyDeborahPagani() {
           <div className="grid-item overflow-hidden md:absolute md:left-0 md:top-0 md:w-[41%] md:h-[64%]">
             <img
               src={packagingImg1}
-              alt="Packaging"
+              alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
@@ -395,7 +395,7 @@ export default function CaseStudyDeborahPagani() {
           <div className="grid-item overflow-hidden md:absolute md:left-[31%] md:top-[1.5%] md:w-[34%] md:h-[17.5%]">
             <img
               src={packagingImg2}
-              alt="Packaging"
+              alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
@@ -403,7 +403,7 @@ export default function CaseStudyDeborahPagani() {
           <div className="grid-item overflow-hidden md:absolute md:left-[42%] md:top-[26%] md:w-[23%] md:h-[48%]">
             <img
               src={packagingImg3}
-              alt="Packaging"
+              alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
@@ -411,7 +411,7 @@ export default function CaseStudyDeborahPagani() {
           <div className="grid-item overflow-hidden md:absolute md:left-[12.5%] md:top-[62%] md:w-[26%] md:h-[44%]">
             <img
               src={packagingImg4}
-              alt="Packaging"
+              alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
@@ -419,7 +419,7 @@ export default function CaseStudyDeborahPagani() {
           <div className="grid-item overflow-hidden md:absolute md:left-[40%] md:top-[79%] md:w-[27%] md:h-[21%]">
             <img
               src={packagingImg5}
-              alt="Packaging"
+              alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
@@ -427,7 +427,7 @@ export default function CaseStudyDeborahPagani() {
           <div className="grid-item overflow-hidden md:absolute md:left-[68%] md:top-[21%] md:w-[28%] md:h-[56%]">
             <img
               src={packagingImg6}
-              alt="Packaging"
+              alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
@@ -448,42 +448,42 @@ export default function CaseStudyDeborahPagani() {
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg1}
-              alt="Production BTS"
+              alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg2}
-              alt="Production BTS"
+              alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg3}
-              alt="Production BTS"
+              alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg4}
-              alt="Production BTS"
+              alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg5}
-              alt="Production BTS"
+              alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg6}
-              alt="Production BTS"
+              alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
@@ -517,21 +517,21 @@ export default function CaseStudyDeborahPagani() {
             <div className="grid-item overflow-hidden">
               <img
                 src={rolloutImg1}
-                alt="Social media rollout"
+                alt="Deborah Pagani Beauty social media marketing rollout"
                 className="w-full h-auto sm:h-[800px] object-cover"
               />
             </div>
             <div className="grid-item overflow-hidden">
               <img
                 src={rolloutImg2}
-                alt="Social media rollout"
+                alt="Deborah Pagani Beauty social media marketing rollout"
                 className="w-full h-auto sm:h-[800px] object-cover"
               />
             </div>
             <div className="grid-item overflow-hidden">
               <img
                 src={rolloutImg3}
-                alt="Social media rollout"
+                alt="Deborah Pagani Beauty social media marketing rollout"
                 className="w-full h-auto sm:h-[800px] object-cover"
               />
             </div>
@@ -546,14 +546,14 @@ export default function CaseStudyDeborahPagani() {
           <div className="image-reveal overflow-hidden">
             <img
               src={finalImg1}
-              alt="Campaign execution"
+              alt="Deborah Pagani Beauty final campaign photography"
               className="parallax-image w-full h-auto md:h-[821px] object-cover"
             />
           </div>
           <div className="image-reveal overflow-hidden">
             <img
               src={finalImg2}
-              alt="Campaign execution"
+              alt="Deborah Pagani Beauty final campaign photography"
               className="parallax-image w-full h-auto md:h-[821px] object-cover"
             />
           </div>
@@ -568,12 +568,12 @@ export default function CaseStudyDeborahPagani() {
             muted
             controls={false}
             className="image-reveal w-full h-auto md:h-[1053px]"
-            ariaLabel="Behind the scenes reel"
+            ariaLabel="Deborah Pagani Beauty photo shoot behind the scenes reel"
           />
           <div className="image-reveal overflow-hidden">
             <img
               src={finalImg3}
-              alt="Before and after"
+              alt="Deborah Pagani Beauty product results before and after"
               className="w-full h-auto md:h-[1053px] object-cover"
             />
           </div>

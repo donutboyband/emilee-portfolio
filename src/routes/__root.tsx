@@ -4,9 +4,11 @@ import Footer from "../components/Footer";
 import SmoothScroll from "../components/SmoothScroll";
 import { PageTransitionProvider } from "../components/PageTransition";
 import { InitialLoaderProvider } from "../components/InitialLoader";
+import NotFound from "../components/NotFound";
 
 export const Route = createRootRoute({
   component: RootLayout,
+  notFoundComponent: NotFound,
 });
 
 function RootLayout() {

@@ -137,6 +137,7 @@ export default function AdditionalDesignStudies() {
                 loop
                 muted
                 playsInline
+                aria-label="Sofwave DFW area rollout campaign promotional video"
                 className="w-full h-full object-cover"
               >
                 <source src={sofwaveVideo1} />
@@ -153,6 +154,7 @@ export default function AdditionalDesignStudies() {
                 loop
                 muted
                 playsInline
+                aria-label="Sofwave campaign motion graphics and video assets"
                 className="w-full h-full object-cover"
               >
                 <source src={sofwaveVideo2} />
@@ -246,7 +248,7 @@ export default function AdditionalDesignStudies() {
             <div className="section-media aspect-[16/9] overflow-hidden">
               <img
                 src={sofwaveImg2}
-                alt="Sofwave campaign imagery"
+                alt="Sofwave campaign lifestyle photography"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -297,6 +299,7 @@ export default function AdditionalDesignStudies() {
                 loop
                 muted
                 playsInline
+                aria-label="LAGOS Smart Caviar Apple Watch band promotional animation"
                 className="w-full h-full object-cover"
               >
                 <source src={lagosVideo} />

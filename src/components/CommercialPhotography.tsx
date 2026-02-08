@@ -174,92 +174,92 @@ export default function CommercialPhotography() {
         {/* Row 1 - 3 equal images */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="gallery-image aspect-[4/3] overflow-hidden">
-            <img src={img1} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img1} alt="Commercial photography - lifestyle product shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[4/3] overflow-hidden">
-            <img src={img2} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img2} alt="Commercial photography - brand imagery" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[4/3] overflow-hidden">
-            <img src={img3} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img3} alt="Commercial photography - studio product shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
 
         {/* Row 2 - 3 tall images */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img4} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img4} alt="Commercial photography - portrait style product photography" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img5} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img5} alt="Commercial photography - vertical brand shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img6} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img6} alt="Commercial photography - editorial style image" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
 
         {/* Row 3 - Wide + Narrow */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="gallery-image md:col-span-2 aspect-[16/9] overflow-hidden">
-            <img src={img7} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img7} alt="Commercial photography - wide format lifestyle shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[2/3] md:aspect-auto overflow-hidden">
-            <img src={img8} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img8} alt="Commercial photography - detail shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
 
         {/* Row 4 - Full width large */}
         <div className="gallery-image mb-4 aspect-[16/10] overflow-hidden">
-          <img src={img9} alt="" className="w-full h-full object-cover" loading="lazy" />
+          <img src={img9} alt="Commercial photography - full width brand campaign image" className="w-full h-full object-cover" loading="lazy" />
         </div>
 
         {/* Row 5 - 3 medium images */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img10} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img10} alt="Commercial photography - product styling shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img11} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img11} alt="Commercial photography - brand lifestyle image" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img12} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img12} alt="Commercial photography - creative direction shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
 
         {/* Row 6 - 2 large images */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img13} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img13} alt="Commercial photography - studio portrait session" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img14} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img14} alt="Commercial photography - editorial brand photography" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
 
         {/* Row 7 - 3 portrait images */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="gallery-image aspect-[3/4] overflow-hidden">
-            <img src={img15} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img15} alt="Commercial photography - portrait format product image" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[3/4] overflow-hidden">
-            <img src={img16} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img16} alt="Commercial photography - branded content shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image aspect-[3/4] overflow-hidden">
-            <img src={img17} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img17} alt="Commercial photography - campaign photography" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
 
         {/* Row 8 - Full width */}
         <div className="gallery-image mb-4 aspect-[16/10] overflow-hidden">
-          <img src={img18} alt="" className="w-full h-full object-cover" loading="lazy" />
+          <img src={img18} alt="Commercial photography - wide panoramic brand shot" className="w-full h-full object-cover" loading="lazy" />
         </div>
 
         {/* Row 9 - Final row */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="gallery-image aspect-[2/3] overflow-hidden">
-            <img src={img19} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img19} alt="Commercial photography - vertical composition shot" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="gallery-image md:col-span-2 aspect-[16/10] overflow-hidden">
-            <img src={img20} alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src={img20} alt="Commercial photography - landscape format brand imagery" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
       </div>

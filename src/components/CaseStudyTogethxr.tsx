@@ -14,7 +14,7 @@ const keepUpDemo = "/assets/video/keepup_demo.mp4";
 // Images
 const heroImage = "/assets/togethxrhero.webp";
 const btsImage = "/assets/74d5050a6be3a969b2778a35a5e57f8c5dc74bec.webp";
-const conceptsImage = "/assets/2185f5df26e264fd54e75a9c3fb05321a2f16e10.webp";
+const conceptsImage = "/assets/Together-Concepts-GIF";
 const direction01Image = "/assets/d57a0970620071cbfed3bba2976b444ded853d86.webp";
 const direction01Image2 = "/assets/2195b1c1fe9a200b3ba299a41d702d8eda760e0b.webp";
 const phoneImage1 = "/assets/c4f332c380d6ddee0f6f929b04f5bff629803e32.webp";
@@ -212,7 +212,7 @@ export default function CaseStudyTogethxr() {
         <div className="image-reveal w-full max-w-[848px] h-[533px] overflow-hidden">
           <img
             src={btsImage}
-            alt="Behind the scenes"
+            alt="TOGETHXR campaign behind the scenes photo"
             className="parallax-image w-full h-full object-cover"
           />
         </div>
@@ -286,7 +286,7 @@ export default function CaseStudyTogethxr() {
           <div className="image-reveal lg:flex-1 lg:ml-auto overflow-hidden flex items-center">
             <img
               src={conceptsImage}
-              alt="Campaign concepts"
+              alt="TOGETHXR creative campaign concept explorations"
               className="w-full lg:w-[800px] h-auto lg:h-[450px] object-cover lg:ml-auto"
             />
           </div>
@@ -308,7 +308,7 @@ export default function CaseStudyTogethxr() {
         <div className="image-reveal overflow-hidden">
           <img
             src={direction01Image}
-            alt="Direction 01 concept"
+            alt="TOGETHXR Direction 01 creative concept presentation"
             className="parallax-image w-full h-auto object-cover"
           />
         </div>
@@ -318,7 +318,7 @@ export default function CaseStudyTogethxr() {
           <div className="image-reveal overflow-hidden">
             <img
               src={direction01Image2}
-              alt="Direction 01 detail"
+              alt="TOGETHXR Direction 01 design detail"
               className="w-full h-auto lg:h-[829px] object-cover"
             />
           </div>
@@ -326,7 +326,7 @@ export default function CaseStudyTogethxr() {
                       src={togethxrMicro}
                       controls={true}
                       className="video-reveal w-full aspect-auto max-w-[848px]"
-                      ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                      ariaLabel="TOGETHXR campaign direction concept video"
                     />
         </div>
       </section>
@@ -345,21 +345,21 @@ export default function CaseStudyTogethxr() {
           <div className="phone-mockup overflow-hidden">
             <img
               src={phoneImage3}
-              alt="Campaign on mobile"
+              alt="TOGETHXR Try to Keep Up campaign on mobile device mockup"
               className="w-full h-auto lg:h-[667px] object-cover"
             />
           </div>
           <div className="phone-mockup overflow-hidden">
             <img
               src={phoneImage1}
-              alt="Campaign on mobile"
+              alt="TOGETHXR Try to Keep Up campaign on mobile device mockup"
               className="w-full h-auto lg:h-[668px] object-cover"
             />
           </div>
           <div className="phone-mockup overflow-hidden">
             <img
               src={phoneImage2}
-              alt="Campaign on mobile"
+              alt="TOGETHXR Try to Keep Up campaign on mobile device mockup"
               className="w-full h-auto lg:h-[667px] object-cover"
             />
           </div>
@@ -370,7 +370,7 @@ export default function CaseStudyTogethxr() {
           <div className="image-reveal overflow-hidden">
             <img
               src={finalImage1}
-              alt="Campaign execution"
+              alt="TOGETHXR final campaign execution imagery"
               className="w-full h-auto lg:h-[893px] object-cover"
             />
           </div>
@@ -381,7 +381,7 @@ export default function CaseStudyTogethxr() {
                       loop
                       muted
                       className="video-reveal w-full max-w-[848px] aspect-auto"
-                      ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                      ariaLabel="TOGETHXR Try to Keep Up campaign social media video"
                     />
         </div>
 
@@ -433,7 +433,7 @@ export default function CaseStudyTogethxr() {
                       src={keepUpDemo}
                       controls={true}
                       className="video-reveal w-full max-w-[848px] aspect-video"
-                      ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                      ariaLabel="TOGETHXR Try to Keep Up campaign demo video"
                     />
       </section>
 

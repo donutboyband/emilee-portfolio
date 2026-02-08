@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as GalleryCommercialPhotographyRouteImport } from './routes/gallery/commercial-photography'
@@ -18,6 +19,11 @@ import { Route as CaseStudyTogethxrRouteImport } from './routes/case-study/toget
 import { Route as CaseStudyNalgeneRouteImport } from './routes/case-study/nalgene'
 import { Route as CaseStudyDeborahPaganiRouteImport } from './routes/case-study/deborah-pagani'
 
+const SitemapRoute = SitemapRouteImport.update({
+  id: '/sitemap',
+  path: '/sitemap',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -65,6 +71,7 @@ const CaseStudyDeborahPaganiRoute = CaseStudyDeborahPaganiRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/sitemap': typeof SitemapRoute
   '/case-study/deborah-pagani': typeof CaseStudyDeborahPaganiRoute
   '/case-study/nalgene': typeof CaseStudyNalgeneRoute
   '/case-study/togethxr': typeof CaseStudyTogethxrRoute
@@ -75,6 +82,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/sitemap': typeof SitemapRoute
   '/case-study/deborah-pagani': typeof CaseStudyDeborahPaganiRoute
   '/case-study/nalgene': typeof CaseStudyNalgeneRoute
   '/case-study/togethxr': typeof CaseStudyTogethxrRoute
@@ -86,6 +94,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/sitemap': typeof SitemapRoute
   '/case-study/deborah-pagani': typeof CaseStudyDeborahPaganiRoute
   '/case-study/nalgene': typeof CaseStudyNalgeneRoute
   '/case-study/togethxr': typeof CaseStudyTogethxrRoute
@@ -98,6 +107,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/sitemap'
     | '/case-study/deborah-pagani'
     | '/case-study/nalgene'
     | '/case-study/togethxr'
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/sitemap'
     | '/case-study/deborah-pagani'
     | '/case-study/nalgene'
     | '/case-study/togethxr'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/sitemap'
     | '/case-study/deborah-pagani'
     | '/case-study/nalgene'
     | '/case-study/togethxr'
@@ -129,6 +141,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  SitemapRoute: typeof SitemapRoute
   CaseStudyDeborahPaganiRoute: typeof CaseStudyDeborahPaganiRoute
   CaseStudyNalgeneRoute: typeof CaseStudyNalgeneRoute
   CaseStudyTogethxrRoute: typeof CaseStudyTogethxrRoute
@@ -139,6 +152,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap': {
+      id: '/sitemap'
+      path: '/sitemap'
+      fullPath: '/sitemap'
+      preLoaderRoute: typeof SitemapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -201,6 +221,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  SitemapRoute: SitemapRoute,
   CaseStudyDeborahPaganiRoute: CaseStudyDeborahPaganiRoute,
   CaseStudyNalgeneRoute: CaseStudyNalgeneRoute,
   CaseStudyTogethxrRoute: CaseStudyTogethxrRoute,

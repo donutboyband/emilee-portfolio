@@ -288,7 +288,7 @@ export default function CaseStudyTraditionalMedicinals() {
           <div className="order-1 lg:order-2 image-reveal lg:flex-1 overflow-hidden flex items-center justify-end">
             <img
               src={lifestyleImage}
-              alt="Behind the scenes"
+              alt="Traditional Medicinals Mother's Milk campaign lifestyle photography with real mothers"
               className="parallax-image w-full lg:w-[900px] h-auto lg:h-[640px] object-cover" loading="lazy"
             />
           </div>
