@@ -381,53 +381,54 @@ export default function CaseStudyDeborahPagani() {
         </div>
 
         {/* Packaging Images - Masonry Grid */}
-        <div className="image-grid relative w-full px-0" style={{ height: "clamp(600px, 50vw, 920px)" }}>
+        {/* Mobile: 2-column grid | Desktop: Absolute positioned masonry */}
+        <div className="image-grid px-4 md:px-0 grid grid-cols-2 gap-2 md:relative md:block md:h-[clamp(600px,50vw,920px)]">
           {/* Large left image */}
-          <div className="grid-item absolute left-0 top-0 w-[41%] h-[64%] overflow-hidden">
+          <div className="grid-item overflow-hidden md:absolute md:left-0 md:top-0 md:w-[41%] md:h-[64%]">
             <img
               src={packagingImg1}
               alt="Packaging"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           {/* Top middle small image */}
-          <div className="grid-item absolute left-[31%] top-[1.5%] w-[34%] h-[17.5%] overflow-hidden">
+          <div className="grid-item overflow-hidden md:absolute md:left-[31%] md:top-[1.5%] md:w-[34%] md:h-[17.5%]">
             <img
               src={packagingImg2}
               alt="Packaging"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           {/* Middle center image */}
-          <div className="grid-item absolute left-[42%] top-[26%] w-[23%] h-[48%] overflow-hidden">
+          <div className="grid-item overflow-hidden md:absolute md:left-[42%] md:top-[26%] md:w-[23%] md:h-[48%]">
             <img
               src={packagingImg3}
               alt="Packaging"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           {/* Bottom left image */}
-          <div className="grid-item absolute left-[12.5%] top-[62%] w-[26%] h-[44%] overflow-hidden">
+          <div className="grid-item overflow-hidden md:absolute md:left-[12.5%] md:top-[62%] md:w-[26%] md:h-[44%]">
             <img
               src={packagingImg4}
               alt="Packaging"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           {/* Bottom middle image */}
-          <div className="grid-item absolute left-[40%] top-[79%] w-[27%] h-[21%] overflow-hidden">
+          <div className="grid-item overflow-hidden md:absolute md:left-[40%] md:top-[79%] md:w-[27%] md:h-[21%]">
             <img
               src={packagingImg5}
               alt="Packaging"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           {/* Large right image */}
-          <div className="grid-item absolute left-[68%] top-[21%] w-[28%] h-[56%] overflow-hidden">
+          <div className="grid-item overflow-hidden md:absolute md:left-[68%] md:top-[21%] md:w-[28%] md:h-[56%]">
             <img
               src={packagingImg6}
               alt="Packaging"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
         </div>
