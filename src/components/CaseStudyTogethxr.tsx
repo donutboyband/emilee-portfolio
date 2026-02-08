@@ -283,7 +283,7 @@ export default function CaseStudyTogethxr() {
           </div>
 
           {/* Right Column - Concepts Image */}
-          <div className="image-reveal lg:flex-1 lg:ml-auto overflow-hidden">
+          <div className="image-reveal lg:flex-1 lg:ml-auto overflow-hidden flex items-center">
             <img
               src={conceptsImage}
               alt="Campaign concepts"
@@ -388,7 +388,7 @@ export default function CaseStudyTogethxr() {
         {/* Description and Deliverables */}
         <div className="flex flex-col lg:flex-row gap-12 lg:justify-between">
           {/* Try to Keep Up description */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
+          <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] max-w-[304px]">
             <p className="leading-[21px] mb-5">TRY TO KEEP UP</p>
             <p className="mb-5">
               An in your face,

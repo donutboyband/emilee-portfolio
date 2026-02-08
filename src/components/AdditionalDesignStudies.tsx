@@ -129,12 +129,7 @@ export default function AdditionalDesignStudies() {
       {/* Project Sections */}
       <div ref={sectionsRef} className="space-y-24 md:space-y-32">
         {/* Sofwave Section */}
-        <section className="project-section">
-          <div className="section-text px-6 md:px-10 mb-6">
-            <p className="text-[11px] tracking-[0.88px] max-w-[336px]">
-              SOFWAVE BY SCITON DFW AREA ROLLOUT CAMPAIGN
-            </p>
-          </div>
+        <section className="project-section mb-4">
           <div className="px-6 md:px-10 space-y-4">
             <div className="section-media aspect-[16/9] overflow-hidden">
               <video
@@ -147,6 +142,11 @@ export default function AdditionalDesignStudies() {
                 <source src={sofwaveVideo1} />
               </video>
             </div>
+            <div className="section-text mb-6">
+            <p className="text-[11px] tracking-[0.88px] max-w-[336px]">
+              SOFWAVE BY SCITON DFW AREA ROLLOUT CAMPAIGN
+            </p>
+          </div>
             <div className="section-media aspect-[16/9] overflow-hidden">
               <video
                 autoPlay
@@ -183,7 +183,7 @@ export default function AdditionalDesignStudies() {
         <section className="project-section">
           <div className="section-text px-6 md:px-10 mb-6">
             <p className="text-[11px] tracking-[0.88px] max-w-[336px]">
-              Logo design and visual system for upcoming musician's project SUNMONSTER
+              Logo design and visual system for upcoming musical project: SUNMONSTER
             </p>
           </div>
           <div className="px-6 md:px-10 space-y-4">
@@ -193,14 +193,14 @@ export default function AdditionalDesignStudies() {
                 <img
                   src={sunmonsterLogo1}
                   alt="Sunmonster logo variations"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
               <div className="section-media aspect-[2.4/1] overflow-hidden">
                 <img
                   src={sunmonsterLogo2}
                   alt="Sunmonster logo variations"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
             </div>
@@ -210,14 +210,14 @@ export default function AdditionalDesignStudies() {
                 <img
                   src={sunmonster10}
                   alt="Sunmonster brand application"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
               <div className="section-media aspect-[16/9] overflow-hidden">
                 <img
                   src={sunmonster09}
                   alt="Sunmonster brand application"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
             </div>
@@ -226,14 +226,14 @@ export default function AdditionalDesignStudies() {
                 <img
                   src={sunmonster08}
                   alt="Sunmonster brand application"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
               <div className="section-media aspect-[16/9] overflow-hidden">
                 <img
                   src={sunmonster07}
                   alt="Sunmonster brand application"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
             </div>
@@ -291,11 +291,6 @@ export default function AdditionalDesignStudies() {
 
         {/* LAGOS Section */}
         <section className="project-section pb-16">
-          <div className="section-text px-6 md:px-10 mb-6">
-            <p className="text-[11px] tracking-[0.88px] max-w-[336px]">
-              LAGOS paid ad design and motion graphics for launch of Smart Caviar Apple Watch band
-            </p>
-          </div>
           <div className="section-media w-full aspect-[16/9] overflow-hidden">
               <video
                 autoPlay
@@ -306,6 +301,11 @@ export default function AdditionalDesignStudies() {
               >
                 <source src={lagosVideo} />
               </video>
+          </div>
+          <div className="section-text pt-4 px-6 md:px-10 mb-6">
+            <p className="text-[11px] tracking-[0.88px] max-w-[336px]">
+              LAGOS paid ad design and motion graphics for launch of Smart Caviar Apple Watch band
+            </p>
           </div>
         </section>
       </div>
