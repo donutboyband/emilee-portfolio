@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 // videos
 const togethxrMicro = "/assets/videos/togethxr_micro.mp4";
 const keepUpMicro = "/assets/videos/keepup_micro.mp4";
-const keepUpDemo = "/assets/video/keepup_demo.mp4";
+const keepUpDemo = "/assets/videos/keepup_demo.mp4";
 
 // Images
 const heroImage = "/assets/togethxrhero.webp";
