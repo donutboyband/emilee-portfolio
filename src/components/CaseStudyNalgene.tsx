@@ -161,20 +161,17 @@ export default function CaseStudyNalgene() {
 
       // Star icon spin animation
       gsap.utils.toArray<HTMLElement>(".star-spin").forEach((el) => {
-        gsap.fromTo(
-          el,
-          { rotation: 0 },
-          {
-            rotation: 360,
-            duration: 1.2,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: el,
-              start: "top 90%",
-              once: true,
-            },
-          }
-        );
+        gsap.set(el, { rotation: 0 });
+        gsap.to(el, {
+          rotation: 360,
+          duration: 1.2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 95%",
+            toggleActions: "play none none none",
+          },
+        });
       });
     }, containerRef);
 

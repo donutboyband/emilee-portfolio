@@ -133,6 +133,21 @@ export default function CommercialPhotography() {
           );
         });
       }
+
+      // Star icon spin animation
+      gsap.utils.toArray<HTMLElement>(".star-spin").forEach((el) => {
+        gsap.set(el, { rotation: 0 });
+        gsap.to(el, {
+          rotation: 360,
+          duration: 1.2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 95%",
+            toggleActions: "play none none none",
+          },
+        });
+      });
     }, containerRef);
 
     return () => ctx.revert();
@@ -281,7 +296,7 @@ export default function CommercialPhotography() {
           <img
             src={starVector}
             alt=""
-            className="w-3 h-3 -rotate-[10deg]"
+            className="star-spin w-3 h-3"
           />
           <span>NEXT GALLERY</span>
           <img src={arrow} alt="" className="w-4 h-2" />

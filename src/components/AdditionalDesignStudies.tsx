@@ -5,11 +5,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+// Sofwave section videos
+const sofwaveVideo1 = "/_videos/v1/6e4fe88b6b5bfbbdec103cf4eb6257ae5545a071";
+const sofwaveVideo2 = "/_videos/v1/3c4432cdceb7e9de1e49459537aa78ef351653d8";
+
 // Sofwave section images
 const sofwaveImg1 =
   "http://localhost:3845/assets/26bd70e8b8311f4998c69676c4ab6fd05950c2c1.png";
 const sofwaveImg2 =
   "http://localhost:3845/assets/cd6d396b4659742602a9e2aa3acb8ce01df2e2c6.png";
+
 
 // Sunmonster section images
 const sunmonsterLogo1 =
@@ -101,6 +106,21 @@ export default function AdditionalDesignStudies() {
           );
         });
       });
+
+      // Star icon spin animation
+      gsap.utils.toArray<HTMLElement>(".star-spin").forEach((el) => {
+        gsap.set(el, { rotation: 0 });
+        gsap.to(el, {
+          rotation: 360,
+          duration: 1.2,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 95%",
+            toggleActions: "play none none none",
+          },
+        });
+      });
     }, containerRef);
 
     return () => ctx.revert();
@@ -127,29 +147,33 @@ export default function AdditionalDesignStudies() {
           </div>
           <div className="px-6 md:px-10 space-y-4">
             <div className="section-media aspect-[16/9] overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              >
+                <source src={sofwaveVideo1} />
+              </video>
+            </div>
+            <div className="section-media aspect-[16/9] overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              >
+                <source src={sofwaveVideo2} />
+              </video>
+            </div>
+            <div className="section-media aspect-[16/9] overflow-hidden">
               <img
                 src={sofwaveImg1}
                 alt="Sofwave campaign imagery"
                 className="w-full h-full object-cover"
               />
-            </div>
-            <div className="section-media aspect-[16/9] overflow-hidden">
-              <img
-                src={sofwaveImg2}
-                alt="Sofwave campaign imagery"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="section-text px-6 md:px-10 mt-8">
-            <div className="text-[9px] tracking-[0.72px] uppercase max-w-[336px] space-y-1">
-              <p className="leading-[18px]">ROLE: Creative Director (Agency Side)</p>
-              <ul className="list-disc ml-4 space-y-0">
-                <li className="leading-[18px]">Creative direction & concept</li>
-                <li className="leading-[18px]">Photo/video shoot direction & styling</li>
-                <li className="leading-[18px]">Video asset creation & design</li>
-                <li className="leading-[18px]">Micro-landing page design</li>
-              </ul>
             </div>
           </div>
         </section>
@@ -215,6 +239,30 @@ export default function AdditionalDesignStudies() {
           </div>
         </section>
 
+        {/* Sofwave continued - full width image */}
+        <section className="project-section">
+          <div className="px-6 md:px-10">
+            <div className="section-media aspect-[16/9] overflow-hidden">
+              <img
+                src={sofwaveImg2}
+                alt="Sofwave campaign imagery"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="section-text px-6 md:px-10 mt-8">
+            <div className="text-[9px] tracking-[0.72px] uppercase max-w-[336px] space-y-1">
+              <p className="leading-[18px]">ROLE: Creative Director (Agency Side)</p>
+              <ul className="list-disc ml-4 space-y-0">
+                <li className="leading-[18px]">Creative direction & concept</li>
+                <li className="leading-[18px]">Photo/video shoot direction & styling</li>
+                <li className="leading-[18px]">Video asset creation & design</li>
+                <li className="leading-[18px]">Micro-landing page design</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* Picture Garden Section */}
         <section className="project-section">
           <div className="section-text px-6 md:px-10 mb-6">
@@ -276,7 +324,7 @@ export default function AdditionalDesignStudies() {
           <img
             src={starVector}
             alt=""
-            className="w-3 h-3 -rotate-[10deg]"
+            className="star-spin w-3 h-3"
           />
           <span>RETURN HOME</span>
         </TransitionLink>

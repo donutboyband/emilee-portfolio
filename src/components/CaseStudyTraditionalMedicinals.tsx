@@ -217,8 +217,9 @@ export default function CaseStudyTraditionalMedicinals() {
       </section>
 
       {/* Role & Collaborators Section */}
-      <section className="px-6 md:px-[296px] py-16">
-        <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[304px]">
+      <section className="px-6 py-16 flex justify-center">
+        <div className="w-full max-w-[848px] flex justify-start">
+          <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[304px]">
           <p className="mb-4">ROLE: Creative Director (Agency Side)</p>
           <ul className="stagger-list list-disc ml-4 space-y-1">
             <li>Creative direction & concept</li>
@@ -233,6 +234,7 @@ export default function CaseStudyTraditionalMedicinals() {
             <li>EMMA TINLOY (STRATEGY & BABY WRANGLER)</li>
             <li>MIA DONDERO (HAIR & MAKEUP)</li>
           </ul>
+          </div>
         </div>
       </section>
 
@@ -293,7 +295,7 @@ export default function CaseStudyTraditionalMedicinals() {
       {/* Final Video Section */}
       <section className="px-6 md:px-[39px] py-16">
         <div className="video-reveal">
-          <div className="w-full max-w-[1361px] aspect-[1361/766] bg-[#f5e6e0] flex items-center justify-center">
+          <div className="w-full max-w-[1361px] mx-auto aspect-[1361/766] bg-[#f5e6e0] flex items-center justify-center">
             <p className="text-[11px] tracking-[0.88px] text-black/40">
               CAMPAIGN VIDEO
             </p>

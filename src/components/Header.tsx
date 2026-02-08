@@ -479,18 +479,8 @@ export default function Header() {
             onMouseEnter={handleGalleryDropdownEnter}
             onMouseLeave={handleGalleryDropdownLeave}
           >
-            <button className="font-normal text-[11px] text-black tracking-[0.88px] leading-normal hover:opacity-70 transition-opacity flex items-center gap-2">
-              <img
-                src={starLeft}
-                alt=""
-                className="w-5 h-5 rotate-[64deg]"
-              />
+            <button className="font-normal text-[11px] text-black tracking-[0.88px] leading-normal hover:opacity-70 transition-opacity">
               <span>GALLERY</span>
-              <img
-                src={starRight}
-                alt=""
-                className="w-5 h-5 -rotate-[10deg]"
-              />
             </button>
 
             {/* Dropdown */}

@@ -11,19 +11,19 @@ const heroImage =
 const fragranceGif =
   "http://localhost:3845/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.png";
 
-// Packaging images
+// Packaging images (masonry grid)
 const packagingImg1 =
-  "http://localhost:3845/assets/1b4100a98ad510efe33cb9e720b366b9ddf913c2.png";
+  "http://localhost:3845/assets/1b4100a98ad510efe33cb9e720b366b9ddf913c2.png"; // Large left
 const packagingImg2 =
-  "http://localhost:3845/assets/ba443e6ccf5c433c57bf12536f0baa507ee4e10a.png";
+  "http://localhost:3845/assets/ba443e6ccf5c433c57bf12536f0baa507ee4e10a.png"; // Top middle
 const packagingImg3 =
-  "http://localhost:3845/assets/307290196c8dc2e479913911503abc4d521f659d.png";
+  "http://localhost:3845/assets/307290196c8dc2e479913911503abc4d521f659d.png"; // Middle center
 const packagingImg4 =
-  "http://localhost:3845/assets/06f4418e3859d7ca2f6fb05a03a0461246d6f490.png";
+  "http://localhost:3845/assets/06f4418e3859d7ca2f6fb05a03a0461246d6f490.png"; // Bottom left
 const packagingImg5 =
-  "http://localhost:3845/assets/0d8eaa36c8d18d21af150ac3595e701a39aea8c5.png";
+  "http://localhost:3845/assets/0d8eaa36c8d18d21af150ac3595e701a39aea8c5.png"; // Bottom middle
 const packagingImg6 =
-  "http://localhost:3845/assets/7548773976e07f4ad39046debc08a23ad7ad9c15.png";
+  "http://localhost:3845/assets/7548773976e07f4ad39046debc08a23ad7ad9c15.png"; // Large right
 
 // Production images (BTS row)
 const productionImg1 =
@@ -54,6 +54,12 @@ const finalImg2 =
   "http://localhost:3845/assets/d36b7860aaeea0aded1b7b2bccfabd1177a82078.png";
 const finalImg3 =
   "http://localhost:3845/assets/ad907cc81db4404bb21216c852fa1f85f2bee151.png";
+
+// Videos
+const signUpBannerVideo = "/_videos/v1/60fe9ff9a616a5fe0931cd079a5ca367fac0f803";
+const launchAdVideo = "/_videos/v1/6b7160754a4ee84366becb199f8f9df7c0d426bd";
+const websiteScrollVideo = "/_videos/v1/25b1b6d7a8d685112fd0abc9eb82d2571378d1c2";
+const btsReelVideo = "/_videos/v1/01c7508981c2873184ad147340d963d9382a2c54";
 
 const arrowIcon =
   "http://localhost:3845/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
@@ -222,12 +228,12 @@ export default function CaseStudyDeborahPagani() {
         <img
           src={heroImage}
           alt="Deborah Pagani Beauty"
-          className="hero-image absolute inset-0 w-full h-full object-cover object-top"
+          className="hero-image absolute inset-0 w-full h-full object-cover object-center"
         />
       </section>
 
       {/* Intro Section */}
-      <section className="px-6 md:px-[42px] py-16 md:py-20">
+      <section className="px-6 md:px-[37px] pt-16 md:pt-20 pb-8">
         <p className="fade-in text-[11px] tracking-[0.88px] mb-4">
           DEBORAH PAGANI BEAUTY
         </p>
@@ -257,266 +263,347 @@ export default function CaseStudyDeborahPagani() {
         </div>
       </section>
 
+      {/* Sign Up Banner Video Section */}
+      <section className="py-8 flex justify-center">
+        <div className="video-reveal w-full max-w-[848px] aspect-video bg-[#f5e6e0]">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src={signUpBannerVideo} type="video/mp4" />
+          </video>
+        </div>
+      </section>
+
       {/* Role & Collaborators Section */}
-      <section className="px-6 md:px-[42px] py-8">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
-          {/* Role */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[373px]">
-            <p className="mb-4">ROLE: Creative Director & Designer</p>
-            <ul className="stagger-list list-disc ml-4 space-y-1">
-              <li>End-to-end creative direction</li>
-              <li>Packaging design</li>
-              <li>Photography and video production</li>
-              <li>Shoot casting & styling</li>
-              <li>Shoot direction & prep</li>
-              <li>Copywriting & marketing strategy</li>
-              <li>Design execution across all launch materials</li>
-              <li>Website re-design</li>
-            </ul>
+      <section className="px-6 py-16 flex justify-center">
+        <div className="w-full max-w-[848px] flex justify-start">
+          <div className="text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[304px]">
+            <div className="fade-in">
+              <p className="mb-4">ROLE: Creative Director & Designer</p>
+              <ul className="stagger-list list-disc ml-4 space-y-1">
+                <li>End-to-end creative direction</li>
+                <li>Packaging design</li>
+                <li>Photography and video production</li>
+                <li>Shoot casting & styling</li>
+                <li>Shoot direction & prep</li>
+                <li>Copywriting & marketing strategy</li>
+                <li>Design execution across all launch materials</li>
+                <li>Website re-design</li>
+              </ul>
+            </div>
 
-            <p className="mt-6 mb-4">COLLABORATORS:</p>
-            <ul className="stagger-list list-disc ml-4 space-y-1">
-              <li>Lomotion (Videography)</li>
-              <li>Teresa Luz (Hair & Makeup)</li>
-              <li>Moreen Jones (Hair)</li>
-              <li>Renee Cohen (Hair)</li>
-              <li>Jacie Woodward (Paid Media Coordinator)</li>
-              <li>Chase Durrett (Web Developer)</li>
-            </ul>
-          </div>
-
-          {/* Fragrance Image */}
-          <div className="image-reveal flex-1 max-w-[419px]">
-            <img
-              src={fragranceGif}
-              alt="Fragrance product"
-              className="w-full h-auto object-cover"
-            />
+            <div className="fade-in mt-6">
+              <p className="mb-4">COLLABORATORS:</p>
+              <ul className="stagger-list list-disc ml-4 space-y-1">
+                <li>Lomotion (Videography)</li>
+                <li>Teresa Luz (Hair & Makeup)</li>
+                <li>Moreen Jones (Hair)</li>
+                <li>Renee Cohen (Hair)</li>
+                <li>Jacie Woodward (Paid Media Coordinator)</li>
+                <li>Chase Durrett (Web Developer)</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Challenge Sections */}
-      <section className="px-6 md:px-[42px] py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Beyond the Campaign Framework */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-            <p className="leading-[21px] mb-4">BEYOND THE CAMPAIGN FRAMEWORK</p>
-            <p>
-              Rather than a single campaign, the focus was on creating a
-              flexible creative system that could support product storytelling,
-              paid acquisition, organic social growth, and long-term brand
-              consistency. Every asset and shoot was designed to build a world
-              for the brand across email marketing, paid media, social posts,
-              and web design.
-            </p>
+      {/* Challenge Sections + Media */}
+      <section className="px-6 md:px-[37px] py-16">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+          {/* Challenge Text - left column */}
+          <div className="flex flex-col gap-8 w-full lg:w-[368px] lg:shrink-0">
+            {/* Beyond the Campaign Framework */}
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
+              <p className="leading-[21px] mb-4">BEYOND THE CAMPAIGN FRAMEWORK</p>
+              <p>
+                Rather than a single campaign, the focus was on creating a
+                flexible creative system that could support product storytelling,
+                paid acquisition, organic social growth, and long-term brand
+                consistency. Every asset and shoot was designed to build a world
+                for the brand across email marketing, paid media, social posts,
+                and web design.
+              </p>
+            </div>
+
+            {/* Breaking Through the Noise */}
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
+              <p className="leading-[21px] mb-4">BREAKING THROUGH THE NOISE</p>
+              <p>
+                The beauty industry is heavily saturated, so a key challenge for
+                this launch was ensuring that the products and visuals told an
+                impactful and memorable story. Leaning into the direction of the
+                first truly luxury haircare experience allowed us to build a brand
+                around the products and marketing to target the luxury and beauty
+                obsessed with products that deliver undeniable results.
+              </p>
+            </div>
+
+            {/* Execution */}
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[18px] uppercase max-w-[368px]">
+              <p className="leading-[21px] mb-4">EXECUTION</p>
+              <ul className="stagger-list list-disc ml-4 space-y-1">
+                <li>
+                  Pre and post-production for two seasonal photo and video shoots
+                </li>
+                <li>Packaging design</li>
+                <li>
+                  Logo refresh to thoughtfully extend the brand into the beauty
+                  category
+                </li>
+                <li>
+                  Full website redesign reflecting the new, elevated visual
+                  direction
+                </li>
+                <li>
+                  Launch messaging, copywriting, and brand voice development
+                </li>
+                <li>Go-to-market launch strategy</li>
+                <li>Social creative across organic and paid channels</li>
+                <li>Email marketing campaign concept, design, and execution</li>
+              </ul>
+            </div>
           </div>
 
-          {/* Breaking Through the Noise */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-            <p className="leading-[21px] mb-4">BREAKING THROUGH THE NOISE</p>
-            <p>
-              The beauty industry is heavily saturated, so a key challenge for
-              this launch was ensuring that the products and visuals told an
-              impactful and memorable story. Leaning into the direction of the
-              first truly luxury haircare experience allowed us to build a brand
-              around the products and marketing to target the luxury and beauty
-              obsessed with products that deliver undeniable results.
-            </p>
-          </div>
+          {/* Media - right columns */}
+          <div className="flex flex-col sm:flex-row gap-6 flex-1">
+            {/* Fragrance Image */}
+            <div className="image-reveal flex-1">
+              <img
+                src={fragranceGif}
+                alt="Fragrance product"
+                className="w-full h-auto lg:h-[700px] object-cover"
+              />
+            </div>
 
-          {/* Execution */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[18px] uppercase max-w-[368px]">
-            <p className="leading-[21px] mb-4">EXECUTION</p>
-            <ul className="stagger-list list-disc ml-4 space-y-1">
-              <li>
-                Pre and post-production for two seasonal photo and video shoots
-              </li>
-              <li>Packaging design</li>
-              <li>
-                Logo refresh to thoughtfully extend the brand into the beauty
-                category
-              </li>
-              <li>
-                Full website redesign reflecting the new, elevated visual
-                direction
-              </li>
-              <li>
-                Launch messaging, copywriting, and brand voice development
-              </li>
-              <li>Go-to-market launch strategy</li>
-              <li>Social creative across organic and paid channels</li>
-              <li>Email marketing campaign concept, design, and execution</li>
-            </ul>
+            {/* Launch Ad Video */}
+            <div className="image-reveal flex-1">
+              <video
+                controls
+                className="w-full h-auto lg:h-[700px] object-cover bg-[#f5e6e0]"
+              >
+                <source src={launchAdVideo} type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Phase 01: Packaging */}
-      <section className="px-6 md:px-[42px] py-16 md:py-20">
-        <p className="fade-in text-[11px] tracking-[0.88px] mb-4">PHASE 01:</p>
-        <h2 className="headline-slide font-light text-[48px] md:text-[82px] tracking-[-4px] md:tracking-[-6.56px] leading-[1] md:leading-[64px] mb-12">
-          PACKAGING
-        </h2>
+      <section className="py-16 md:py-20">
+        <div className="px-6 md:px-[64px]">
+          <p className="fade-in text-[11px] tracking-[0.88px] mb-4">PHASE 01:</p>
+        </div>
+        <div className="px-6 md:px-[59px]">
+          <h2 className="headline-slide font-light text-[48px] md:text-[82px] tracking-[-4px] md:tracking-[-6.56px] leading-[1] md:leading-[64px] mb-12">
+            PACKAGING
+          </h2>
+        </div>
 
-        {/* Packaging Images Grid */}
-        <div className="image-grid grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="grid-item overflow-hidden">
+        {/* Packaging Images - Masonry Grid */}
+        <div className="image-grid relative w-full px-0" style={{ height: "clamp(600px, 50vw, 920px)" }}>
+          {/* Large left image */}
+          <div className="grid-item absolute left-0 top-0 w-[41%] h-[64%] overflow-hidden">
             <img
               src={packagingImg1}
               alt="Packaging"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
-          <div className="grid-item overflow-hidden">
+          {/* Top middle small image */}
+          <div className="grid-item absolute left-[31%] top-[1.5%] w-[34%] h-[17.5%] overflow-hidden">
             <img
               src={packagingImg2}
               alt="Packaging"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
-          <div className="grid-item overflow-hidden">
+          {/* Middle center image */}
+          <div className="grid-item absolute left-[42%] top-[26%] w-[23%] h-[48%] overflow-hidden">
             <img
               src={packagingImg3}
               alt="Packaging"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
-          <div className="grid-item overflow-hidden">
+          {/* Bottom left image */}
+          <div className="grid-item absolute left-[12.5%] top-[62%] w-[26%] h-[44%] overflow-hidden">
             <img
               src={packagingImg4}
               alt="Packaging"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
-          <div className="grid-item overflow-hidden">
+          {/* Bottom middle image */}
+          <div className="grid-item absolute left-[40%] top-[79%] w-[27%] h-[21%] overflow-hidden">
             <img
               src={packagingImg5}
               alt="Packaging"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
-          <div className="grid-item overflow-hidden">
+          {/* Large right image */}
+          <div className="grid-item absolute left-[68%] top-[21%] w-[28%] h-[56%] overflow-hidden">
             <img
               src={packagingImg6}
               alt="Packaging"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>
       </section>
 
       {/* Phase 02: Production */}
-      <section className="px-6 md:px-[42px] py-16 md:py-20">
-        <p className="fade-in text-[11px] tracking-[0.88px] mb-4">PHASE 02:</p>
-        <h2 className="headline-slide font-light text-[48px] md:text-[82px] tracking-[-4px] md:tracking-[-6.56px] leading-[1] md:leading-[64px] mb-12">
-          PRODUCTION
-        </h2>
+      <section className="px-0 py-16 md:py-20">
+        <div className="px-6 md:px-[64px]">
+          <p className="fade-in text-[11px] tracking-[0.88px] mb-4">PHASE 02:</p>
+          <h2 className="headline-slide font-light text-[48px] md:text-[82px] tracking-[-4px] md:tracking-[-6.56px] leading-[1] md:leading-[64px] mb-12">
+            PRODUCTION
+          </h2>
+        </div>
 
-        {/* Production Images Row */}
-        <div className="image-grid grid grid-cols-3 md:grid-cols-6 gap-2">
+        {/* Production Images Row - Edge to Edge */}
+        <div className="image-grid grid grid-cols-3 md:grid-cols-6 gap-0">
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg1}
               alt="Production BTS"
-              className="w-full h-full object-cover aspect-[3/4]"
+              className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg2}
               alt="Production BTS"
-              className="w-full h-full object-cover aspect-[3/4]"
+              className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg3}
               alt="Production BTS"
-              className="w-full h-full object-cover aspect-[3/4]"
+              className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg4}
               alt="Production BTS"
-              className="w-full h-full object-cover aspect-[3/4]"
+              className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg5}
               alt="Production BTS"
-              className="w-full h-full object-cover aspect-[3/4]"
+              className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
               src={productionImg6}
               alt="Production BTS"
-              className="w-full h-full object-cover aspect-[3/4]"
+              className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
         </div>
       </section>
 
       {/* Phase 03: Rollout */}
-      <section className="px-6 md:px-[42px] py-16 md:py-20">
-        <p className="fade-in text-[11px] tracking-[0.88px] mb-4">PHASE 03:</p>
-        <h2 className="headline-slide font-light text-[48px] md:text-[82px] tracking-[-4px] md:tracking-[-6.56px] leading-[1] md:leading-[64px] mb-12">
-          ROLLOUT
-        </h2>
+      <section className="py-16 md:py-20">
+        <div className="px-6 md:px-[64px]">
+          <p className="fade-in text-[11px] tracking-[0.88px] mb-4">PHASE 03:</p>
+        </div>
+        <div className="px-6 md:px-[59px]">
+          <h2 className="headline-slide font-light text-[48px] md:text-[82px] tracking-[-4px] md:tracking-[-6.56px] leading-[1] md:leading-[64px] mb-12">
+            ROLLOUT
+          </h2>
+        </div>
+
+        {/* Website Scroll Video */}
+        <div className="px-6 md:px-[38px]">
+          <div className="image-reveal mb-12">
+            <video
+              controls
+              className="w-full h-auto object-cover"
+              style={{ maxHeight: "856px" }}
+            >
+              <source src={websiteScrollVideo} type="video/mp4" />
+            </video>
+          </div>
+        </div>
 
         {/* Rollout Images - Three Column */}
-        <div className="image-grid grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-16">
-          <div className="grid-item overflow-hidden">
-            <img
-              src={rolloutImg1}
-              alt="Social media rollout"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-          <div className="grid-item overflow-hidden">
-            <img
-              src={rolloutImg2}
-              alt="Social media rollout"
-              className="w-full h-auto object-cover"
-            />
-          </div>
-          <div className="grid-item overflow-hidden">
-            <img
-              src={rolloutImg3}
-              alt="Social media rollout"
-              className="w-full h-auto object-cover"
-            />
+        <div className="px-6 md:px-[43px]">
+          <div className="image-grid grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <div className="grid-item overflow-hidden">
+              <img
+                src={rolloutImg1}
+                alt="Social media rollout"
+                className="w-full h-auto sm:h-[800px] object-cover"
+              />
+            </div>
+            <div className="grid-item overflow-hidden">
+              <img
+                src={rolloutImg2}
+                alt="Social media rollout"
+                className="w-full h-auto sm:h-[800px] object-cover"
+              />
+            </div>
+            <div className="grid-item overflow-hidden">
+              <img
+                src={rolloutImg3}
+                alt="Social media rollout"
+                className="w-full h-auto sm:h-[800px] object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Final Images Section */}
-      <section className="px-6 md:px-[42px] py-16 md:py-20">
+      <section className="px-6 md:px-[55px] py-16 md:py-20">
+        {/* Two side-by-side images */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           <div className="image-reveal overflow-hidden">
             <img
               src={finalImg1}
               alt="Campaign execution"
-              className="parallax-image w-full h-auto object-cover"
+              className="parallax-image w-full h-auto md:h-[821px] object-cover"
             />
           </div>
           <div className="image-reveal overflow-hidden">
             <img
               src={finalImg2}
               alt="Campaign execution"
-              className="parallax-image w-full h-auto object-cover"
+              className="parallax-image w-full h-auto md:h-[821px] object-cover"
             />
           </div>
         </div>
-        <div className="image-reveal overflow-hidden">
-          <img
-            src={finalImg3}
-            alt="Before and after"
-            className="w-full h-auto object-cover"
-          />
+
+        {/* BTS Reel Video and Before-After */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="image-reveal overflow-hidden">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto md:h-[1053px] object-cover"
+            >
+              <source src={btsReelVideo} type="video/mp4" />
+            </video>
+          </div>
+          <div className="image-reveal overflow-hidden">
+            <img
+              src={finalImg3}
+              alt="Before and after"
+              className="w-full h-auto md:h-[1053px] object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -525,7 +612,7 @@ export default function CaseStudyDeborahPagani() {
         <TransitionLink
           to="/case-study/nalgene"
           className="flex items-center gap-3 text-[11px] tracking-[0.88px] hover:opacity-70 transition-opacity"
-          style={{ opacity: 1, transform: 'none' }}
+          style={{ opacity: 1 }}
         >
           <img src={starIcon} alt="" className="star-spin w-[22px] h-[22px]" />
           <span>NEXT CASE STUDY</span>

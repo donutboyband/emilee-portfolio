@@ -373,11 +373,11 @@ export default function CaseStudyTogethxr() {
             <img
               src={finalImage1}
               alt="Campaign execution"
-              className="parallax-image w-full h-auto lg:h-[893px] object-cover"
+              className="w-full h-auto lg:h-[893px] object-cover"
             />
           </div>
-          <div className="image-reveal overflow-hidden bg-black flex items-center justify-center h-[400px] lg:h-[874px]">
-            <p className="text-[11px] tracking-[0.88px] text-white/40">
+          <div className="image-reveal overflow-hidden flex items-start justify-start h-[400px] lg:h-[874px]">
+            <p className="text-[11px] tracking-[0.88px] text-black/40">
               VIDEO PLACEHOLDER
             </p>
           </div>
