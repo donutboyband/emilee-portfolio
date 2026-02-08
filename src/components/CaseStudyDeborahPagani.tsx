@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { TransitionLink } from "./PageTransition";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import VideoPlayer from './VideoPlayer';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,10 +37,10 @@ const finalImg2 = "/assets/d36b7860aaeea0aded1b7b2bccfabd1177a82078.png";
 const finalImg3 = "/assets/ad907cc81db4404bb21216c852fa1f85f2bee151.png";
 
 // Videos (still need to be downloaded separately)
-const signUpBannerVideo = "/_videos/v1/60fe9ff9a616a5fe0931cd079a5ca367fac0f803";
-const launchAdVideo = "/_videos/v1/6b7160754a4ee84366becb199f8f9df7c0d426bd";
-const websiteScrollVideo = "/_videos/v1/25b1b6d7a8d685112fd0abc9eb82d2571378d1c2";
-const btsReelVideo = "/_videos/v1/01c7508981c2873184ad147340d963d9382a2c54";
+const signUpBannerVideo = "/assets/videos/debpag_micro.mp4";
+const launchAdVideo = "/assets/videos/debpag_advibe.mp4";
+const websiteScrollVideo = "/assets/videos/debpag_rollout.mp4";
+const btsReelVideo = "/assets/videos/debpag_bts.mp4";
 
 const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
@@ -243,17 +244,15 @@ export default function CaseStudyDeborahPagani() {
 
       {/* Sign Up Banner Video Section */}
       <section className="py-8 flex justify-center">
-        <div className="video-reveal w-full max-w-[848px] aspect-video bg-[#f5e6e0]">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          >
-            <source src={signUpBannerVideo} type="video/mp4" />
-          </video>
-        </div>
+        <VideoPlayer
+                  src={signUpBannerVideo}
+                  autoPlay
+                  controls={false}
+                  loop
+                  muted
+                  className="video-reveal w-full max-w-[848px] h-[533px]"
+                  ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                />
       </section>
 
       {/* Role & Collaborators Section */}
@@ -295,7 +294,7 @@ export default function CaseStudyDeborahPagani() {
           {/* Challenge Text - left column */}
           <div className="flex flex-col gap-8 w-full lg:w-[368px] lg:shrink-0">
             {/* Beyond the Campaign Framework */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
+            <div className="fade-in text-[10px] tracking-[0.88px] leading-[15px] max-w-[304px]">
               <p className="leading-[21px] mb-4">BEYOND THE CAMPAIGN FRAMEWORK</p>
               <p>
                 Rather than a single campaign, the focus was on creating a
@@ -308,7 +307,7 @@ export default function CaseStudyDeborahPagani() {
             </div>
 
             {/* Breaking Through the Noise */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
+            <div className="fade-in text-[10px] tracking-[0.88px] leading-[15px] max-w-[304px]">
               <p className="leading-[21px] mb-4">BREAKING THROUGH THE NOISE</p>
               <p>
                 The beauty industry is heavily saturated, so a key challenge for
@@ -321,9 +320,9 @@ export default function CaseStudyDeborahPagani() {
             </div>
 
             {/* Execution */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[18px] uppercase max-w-[368px]">
+            <div className="fade-in text-[10px] tracking-[0.88px] leading-[18px]">
               <p className="leading-[21px] mb-4">EXECUTION</p>
-              <ul className="stagger-list list-disc ml-4 space-y-1">
+              <ul className="stagger-list list-disc ml-4 space-y-1 whitespace-nowrap">
                 <li>
                   Pre and post-production for two seasonal photo and video shoots
                 </li>
@@ -359,12 +358,12 @@ export default function CaseStudyDeborahPagani() {
 
             {/* Launch Ad Video */}
             <div className="image-reveal flex-1">
-              <video
-                controls
-                className="w-full h-auto lg:h-[700px] object-cover bg-[#f5e6e0]"
-              >
-                <source src={launchAdVideo} type="video/mp4" />
-              </video>
+                 <VideoPlayer
+                  src={launchAdVideo}
+                  controls={true}
+                  className="video-reveal w-[394px] aspect-auto"
+                  ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                />
             </div>
           </div>
         </div>
@@ -503,15 +502,12 @@ export default function CaseStudyDeborahPagani() {
 
         {/* Website Scroll Video */}
         <div className="px-6 md:px-[38px]">
-          <div className="image-reveal mb-12">
-            <video
-              controls
-              className="w-full h-auto object-cover"
-              style={{ maxHeight: "856px" }}
-            >
-              <source src={websiteScrollVideo} type="video/mp4" />
-            </video>
-          </div>
+          <VideoPlayer
+            src={websiteScrollVideo}
+            controls
+            className="image-reveal mb-12 w-full"
+            ariaLabel="Deborah Pagani website scroll through"
+          />
         </div>
 
         {/* Rollout Images - Three Column */}
@@ -564,17 +560,15 @@ export default function CaseStudyDeborahPagani() {
 
         {/* BTS Reel Video and Before-After */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="image-reveal overflow-hidden">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-auto md:h-[1053px] object-cover"
-            >
-              <source src={btsReelVideo} type="video/mp4" />
-            </video>
-          </div>
+          <VideoPlayer
+            src={btsReelVideo}
+            autoPlay
+            loop
+            muted
+            controls={false}
+            className="image-reveal w-full h-auto md:h-[1053px]"
+            ariaLabel="Behind the scenes reel"
+          />
           <div className="image-reveal overflow-hidden">
             <img
               src={finalImg3}

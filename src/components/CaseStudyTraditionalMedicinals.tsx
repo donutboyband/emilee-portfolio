@@ -1,10 +1,13 @@
 import { useEffect, useRef } from "react";
 import { TransitionLink } from "./PageTransition";
+import VideoPlayer from "./VideoPlayer";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-
+// Video
+const mmBTS = "/assets/videos/mm_bts.mp4";
+const mmTwo = "/assets/videos/mm_two.mp4"
 // Images
 const heroImage = "/assets/343cab8934af33e34f9a29a7629c76689057ac57.png";
 const lifestyleImage = "/assets/cf65c10e851254b63f64e0ca84ff0d8586e0add1.png";
@@ -205,11 +208,15 @@ export default function CaseStudyTraditionalMedicinals() {
 
       {/* Video Placeholder Section */}
       <section className="py-8 flex justify-center">
-        <div className="video-reveal w-full max-w-[848px] h-[533px] bg-[#f5e6e0] flex items-center justify-center">
-          <p className="text-[11px] tracking-[0.88px] text-black/40">
-            BEHIND THE SCENES VIDEO
-          </p>
-        </div>
+        <VideoPlayer
+          src={mmBTS}
+          autoPlay
+          controls={false}
+          loop
+          muted
+          className="video-reveal w-full max-w-[848px] h-[533px]"
+          ariaLabel="Behind the scenes video of Mother's Milk campaign"
+        />
       </section>
 
       {/* Role & Collaborators Section */}
@@ -291,11 +298,14 @@ export default function CaseStudyTraditionalMedicinals() {
       {/* Final Video Section */}
       <section className="px-6 md:px-[39px] py-16">
         <div className="video-reveal">
-          <div className="w-full max-w-[1361px] mx-auto aspect-[1361/766] bg-[#f5e6e0] flex items-center justify-center">
-            <p className="text-[11px] tracking-[0.88px] text-black/40">
-              CAMPAIGN VIDEO
-            </p>
-          </div>
+          <VideoPlayer
+            src={mmTwo}
+            controls
+            loop
+            className="w-full max-w-[1361px] mx-auto"
+            aspectRatio="1361/766"
+            ariaLabel="Mother's Milk campaign video"
+          />
         </div>
       </section>
 

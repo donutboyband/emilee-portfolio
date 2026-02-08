@@ -2,8 +2,14 @@ import { useEffect, useRef } from "react";
 import { TransitionLink } from "./PageTransition";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import VideoPlayer from "./VideoPlayer";
 
 gsap.registerPlugin(ScrollTrigger);
+
+// videos
+const togethxrMicro = "/assets/videos/togethxr_micro.mp4";
+const keepUpMicro = "/assets/videos/keepup_micro.mp4";
+const keepUpDemo = "/assets/video/keepup_demo.mp4";
 
 // Images
 const heroImage = "/assets/c4cfbd03e4f09a9135ae9078ab30f08057982e5c.png";
@@ -314,11 +320,12 @@ export default function CaseStudyTogethxr() {
               className="w-full h-auto lg:h-[829px] object-cover"
             />
           </div>
-          <div className="image-reveal overflow-hidden bg-black flex items-center justify-center h-[400px] lg:h-[827px]">
-            <p className="text-[11px] tracking-[0.88px] text-white/40">
-              VIDEO PLACEHOLDER
-            </p>
-          </div>
+               <VideoPlayer
+                      src={togethxrMicro}
+                      controls={true}
+                      className="video-reveal w-full aspect-auto max-w-[848px]"
+                      ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                    />
         </div>
       </section>
 
@@ -357,7 +364,7 @@ export default function CaseStudyTogethxr() {
         </div>
 
         {/* Two large images/videos */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16 pb-12">
           <div className="image-reveal overflow-hidden">
             <img
               src={finalImage1}
@@ -365,11 +372,15 @@ export default function CaseStudyTogethxr() {
               className="w-full h-auto lg:h-[893px] object-cover"
             />
           </div>
-          <div className="image-reveal overflow-hidden flex items-start justify-start h-[400px] lg:h-[874px]">
-            <p className="text-[11px] tracking-[0.88px] text-black/40">
-              VIDEO PLACEHOLDER
-            </p>
-          </div>
+            <VideoPlayer
+                      src={keepUpMicro}
+                      autoPlay
+                      controls={false}
+                      loop
+                      muted
+                      className="video-reveal w-full max-w-[848px] aspect-auto"
+                      ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                    />
         </div>
 
         {/* Description and Deliverables */}
@@ -415,12 +426,13 @@ export default function CaseStudyTogethxr() {
       </section>
 
       {/* Final Video Section */}
-      <section className="px-6 md:px-[51px] py-16">
-        <div className="image-reveal bg-black flex items-center justify-center w-full max-w-[1338px] aspect-[1338/753]">
-          <p className="text-[11px] tracking-[0.88px] text-white/40">
-            TRY TO KEEP UP DEMO VIDEO
-          </p>
-        </div>
+      <section className="px-6 md:px-[51px] py-16 flex justify-center">
+          <VideoPlayer
+                      src={keepUpDemo}
+                      controls={true}
+                      className="video-reveal w-full max-w-[848px] aspect-video"
+                      ariaLabel="Behind the scenes video of Mother's Milk campaign"
+                    />
       </section>
 
       {/* Next Case Study */}

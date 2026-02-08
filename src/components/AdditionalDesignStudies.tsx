@@ -26,6 +26,9 @@ const pgScreenshot = "/assets/c2e6df98523aee586fe4764f7d97e61effa77623.png";
 const pgTagMustard = "/assets/34c421303ed05ccb70faf839b459809b4fea7cc2.png";
 const pgBrandBook = "/assets/4921a9d090bff0172805ebff8315190dde190cb1.png";
 
+// Lagos video
+const lagosVideo = "/assets/videos/lagos.mp4"
+
 // Icons
 const starVector = "/assets/ffc4032bb4b37f387e4b2903463baae79777353e.svg";
 
@@ -155,16 +158,8 @@ export default function AdditionalDesignStudies() {
                 <source src={sofwaveVideo2} />
               </video>
             </div>
-            <div className="section-media aspect-[16/9] overflow-hidden">
-              <img
-                src={sofwaveImg1}
-                alt="Sofwave campaign imagery"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="section-text px-6 md:px-10 mt-8">
-            <div className="text-[9px] tracking-[0.72px] uppercase max-w-[336px] space-y-1">
+             <div className="section-text px-6 md:px-10 mt-8">
+            <div className="text-[9px] tracking-[0.72px] uppercase max-w-[336px] space-y-1 pb-12">
               <p className="leading-[18px]">ROLE: Creative Director (Agency Side)</p>
               <ul className="list-disc ml-4 space-y-0">
                 <li className="leading-[18px]">Creative direction & concept</li>
@@ -172,6 +167,14 @@ export default function AdditionalDesignStudies() {
                 <li className="leading-[18px]">Video asset creation & design</li>
                 <li className="leading-[18px]">Micro-landing page design</li>
               </ul>
+            </div>
+          </div>
+            <div className="section-media aspect-[16/9] overflow-hidden">
+              <img
+                src={sofwaveImg1}
+                alt="Sofwave campaign imagery"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -237,8 +240,8 @@ export default function AdditionalDesignStudies() {
           </div>
         </section>
 
-        {/* Sofwave continued - full width image */}
-        <section className="project-section">
+        {/* Picture Garden  - full width image */}
+        <section className="project-section mb-8">
           <div className="px-6 md:px-10">
             <div className="section-media aspect-[16/9] overflow-hidden">
               <img
@@ -264,14 +267,14 @@ export default function AdditionalDesignStudies() {
                 <img
                   src={pgScreenshot}
                   alt="Picture Garden brand elements"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
               <div className="section-media aspect-[3/4] md:aspect-[4/5] overflow-hidden">
                 <img
                   src={pgTagMustard}
                   alt="Picture Garden tag design"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full"
                 />
               </div>
             </div>
@@ -280,7 +283,7 @@ export default function AdditionalDesignStudies() {
               <img
                 src={pgBrandBook}
                   alt="Picture Garden brand book spread"
-                className="w-full h-full object-cover"
+                className="w-full h-full"
               />
             </div>
           </div>
@@ -293,11 +296,16 @@ export default function AdditionalDesignStudies() {
               LAGOS paid ad design and motion graphics for launch of Smart Caviar Apple Watch band
             </p>
           </div>
-          <div className="section-media w-full aspect-[16/9] overflow-hidden bg-black">
-            {/* Placeholder for video - using a gradient background */}
-            <div className="w-full h-full flex items-center justify-center text-white/50 text-sm">
-              Video Content
-            </div>
+          <div className="section-media w-full aspect-[16/9] overflow-hidden">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              >
+                <source src={lagosVideo} />
+              </video>
           </div>
         </section>
       </div>
