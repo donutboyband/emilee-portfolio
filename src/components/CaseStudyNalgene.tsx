@@ -212,14 +212,14 @@ export default function CaseStudyNalgene() {
       <section className="px-6 md:px-[42px] py-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           {/* Left Column - Role */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[352px]">
-            <p className="mb-4">ROLE: Creative Director (Agency Side)</p>
+          <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] max-w-[352px]">
+            <p className="mb-4 uppercase">ROLE: Creative Director (Agency Side)</p>
             <ul className="stagger-list list-disc ml-4 space-y-1">
               <li>Creative direction & concept</li>
               <li>Oversight of asset design</li>
             </ul>
 
-            <p className="mt-6 mb-4">COLLABORATORS:</p>
+            <p className="mt-6 mb-4 uppercase">COLLABORATORS:</p>
             <ul className="stagger-list list-disc ml-4 space-y-1">
               <li>Ben Rosenthal (Senior Designer & Art Director)</li>
               <li>Saltwater (Product Photography)</li>
