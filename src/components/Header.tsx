@@ -646,7 +646,8 @@ export default function Header() {
 
           {/* Resume - Direct link */}
           <a
-            href="#resume"
+            href="/assets/EmileeDurrettResume2026.pdf"
+            download
             onClick={handleNavClick}
             className="menu-item flex items-center justify-center gap-4 py-8 border-b border-white/20"
           >
