@@ -233,8 +233,8 @@ export default function CaseStudyNalgene() {
           {/* Left Column - Text */}
           <div className="flex flex-col gap-8 w-full lg:w-[304px] lg:shrink-0">
             {/* Insight */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase">
-              <p className="leading-[21px] mb-4">INSIGHT</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px]">
+              <p className="leading-[21px] mb-4 uppercase">INSIGHT</p>
               <p>
                 In order to highlight Nalgene as the original, on-the-go reusable
                 water bottle, we wanted to lean into the brand's roots and pay
@@ -244,8 +244,8 @@ export default function CaseStudyNalgene() {
             </div>
 
             {/* Idea */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase">
-              <p className="leading-[21px] mb-4">IDEA</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px]">
+              <p className="leading-[21px] mb-4 uppercase">IDEA</p>
               <p>
                 Looking toward retro trail maps, logo designs, and archival prints
                 and imagery, we designed a logo and motif system that felt
@@ -254,8 +254,8 @@ export default function CaseStudyNalgene() {
             </div>
 
             {/* Execution */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase">
-              <p className="leading-[21px] mb-4">EXECUTION</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px]">
+              <p className="leading-[21px] mb-4 uppercase">EXECUTION</p>
               <p>
                 The visual library and logo system was created to flex across
                 multiple executions, including limited edition bottle designs,
