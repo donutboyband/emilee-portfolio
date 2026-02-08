@@ -207,28 +207,29 @@ export default function CaseStudyTogethxr() {
         </div>
       </section>
 
-      {/* BTS Image Section */}
-      <section className="py-8 flex justify-center">
-        <div className="image-reveal w-full max-w-[848px] h-[533px] overflow-hidden">
-          <img
-            src={btsImage}
-            alt="Behind the scenes"
-            className="parallax-image w-full h-full object-cover"
-          />
-        </div>
-      </section>
+      {/* BTS Image & Role Section */}
+      <section className="px-6 md:px-[37px] py-8">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 lg:items-start">
+          {/* Left Column - Role */}
+          <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[328px] lg:shrink-0">
+            <p className="mb-4">ROLE: Creative Director & Designer</p>
+            <ul className="stagger-list list-disc ml-4 space-y-1">
+              <li>Creative Direction & Concept Exploration</li>
+              <li>Concept Platform Pitch Presentation</li>
+              <li>Art Direction & Design Execution</li>
+              <li>Concept Video Sizzle Treatment</li>
+              <li>Final Output Video Edit & Delivery</li>
+            </ul>
+          </div>
 
-      {/* Role Section */}
-      <section className="px-6 md:pl-[296px] py-16">
-        <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[328px]">
-          <p className="mb-4">ROLE: Creative Director & Designer</p>
-          <ul className="stagger-list list-disc ml-4 space-y-1">
-            <li>Creative Direction & Concept Exploration</li>
-            <li>Concept Platform Pitch Presentation</li>
-            <li>Art Direction & Design Execution</li>
-            <li>Concept Video Sizzle Treatment</li>
-            <li>Final Output Video Edit & Delivery</li>
-          </ul>
+          {/* Right Column - BTS Image */}
+          <div className="image-reveal flex-1 overflow-hidden flex justify-center lg:justify-end">
+            <img
+              src={btsImage}
+              alt="Behind the scenes"
+              className="parallax-image w-full max-w-[848px] h-[533px] object-cover"
+            />
+          </div>
         </div>
       </section>
 
