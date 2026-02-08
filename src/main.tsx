@@ -1,4 +1,6 @@
-import '@eyeglass/inspector';
+if (import.meta.env.DEV) {
+  import('@eyeglass/inspector');
+}
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createRouter, RouterProvider } from '@tanstack/react-router'
