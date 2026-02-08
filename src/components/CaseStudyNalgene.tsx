@@ -208,77 +208,79 @@ export default function CaseStudyNalgene() {
         </div>
       </section>
 
-      {/* Role & Challenge Section */}
-      <section className="px-6 md:px-[42px] py-16">
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
-          {/* Left Column - Role */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] max-w-[352px]">
-            <p className="mb-4 uppercase">ROLE: Creative Director (Agency Side)</p>
+      {/* Role Section */}
+      <section className="px-6 md:px-[42px] py-16 flex justify-center">
+        <div className="w-full max-w-[848px] flex justify-start">
+          <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[352px]">
+            <p className="mb-4">ROLE: Creative Director (Agency Side)</p>
             <ul className="stagger-list list-disc ml-4 space-y-1">
               <li>Creative direction & concept</li>
               <li>Oversight of asset design</li>
             </ul>
 
-            <p className="mt-6 mb-4 uppercase">COLLABORATORS:</p>
+            <p className="mt-6 mb-4">COLLABORATORS:</p>
             <ul className="stagger-list list-disc ml-4 space-y-1">
               <li>Ben Rosenthal (Senior Designer & Art Director)</li>
               <li>Saltwater (Product Photography)</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* Insight, Idea, Execution Section */}
+      <section className="px-6 md:px-[37px] py-16">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
+          {/* Left Column - Text */}
+          <div className="flex flex-col gap-8 w-full lg:w-[304px] lg:shrink-0">
+            {/* Insight */}
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase">
+              <p className="leading-[21px] mb-4">INSIGHT</p>
+              <p>
+                In order to highlight Nalgene as the original, on-the-go reusable
+                water bottle, we wanted to lean into the brand's roots and pay
+                homage to some of the OG design styles and systems that the brand
+                began with 75 years ago.
+              </p>
+            </div>
+
+            {/* Idea */}
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase">
+              <p className="leading-[21px] mb-4">IDEA</p>
+              <p>
+                Looking toward retro trail maps, logo designs, and archival prints
+                and imagery, we designed a logo and motif system that felt
+                connected to the past while celebrating the present.
+              </p>
+            </div>
+
+            {/* Execution */}
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase">
+              <p className="leading-[21px] mb-4">EXECUTION</p>
+              <p>
+                The visual library and logo system was created to flex across
+                multiple executions, including limited edition bottle designs,
+                digital banners and promotional posts, and printed collateral to
+                be used in gifting and promotion of the anniversary.
+              </p>
+            </div>
+          </div>
 
           {/* Right Column - Retro Images */}
-          <div className="image-pair flex flex-col sm:flex-row gap-4 flex-1">
+          <div className="image-pair flex flex-col sm:flex-row gap-4 flex-1 lg:ml-auto">
             <div className="pair-item flex-1 overflow-hidden">
               <img
                 src={retroImage2}
                 alt="Retro Nalgene design"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto lg:h-[476px] object-cover"
               />
             </div>
             <div className="pair-item flex-1 overflow-hidden">
               <img
                 src={retroImage1}
                 alt="Retro Nalgene design"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto lg:h-[476px] object-cover"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Insight, Idea, Execution Section */}
-      <section className="px-6 md:px-[42px] py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-[912px]">
-          {/* Insight */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-            <p className="leading-[21px] mb-4">INSIGHT</p>
-            <p>
-              In order to highlight Nalgene as the original, on-the-go reusable
-              water bottle, we wanted to lean into the brand's roots and pay
-              homage to some of the OG design styles and systems that the brand
-              began with 75 years ago.
-            </p>
-          </div>
-
-          {/* Idea */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-            <p className="leading-[21px] mb-4">IDEA</p>
-            <p>
-              Looking toward retro trail maps, logo designs, and archival prints
-              and imagery, we designed a logo and motif system that felt
-              connected to the past while celebrating the present.
-            </p>
-          </div>
-
-          {/* Execution */}
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-            <p className="leading-[21px] mb-4">EXECUTION</p>
-            <p>
-              The visual library and logo system was created to flex across
-              multiple executions, including limited edition bottle designs,
-              digital banners and promotional posts, and printed collateral to
-              be used in gifting and promotion of the anniversary.
-            </p>
           </div>
         </div>
       </section>
