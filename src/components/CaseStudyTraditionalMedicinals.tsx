@@ -247,8 +247,8 @@ export default function CaseStudyTraditionalMedicinals() {
           {/* Left Column - Text */}
           <div className="lg:w-[304px] lg:shrink-0 space-y-[108px]">
             {/* Insight */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-              <p className="leading-[21px] mb-5">INSIGHT</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] max-w-[304px]">
+              <p className="leading-[21px] mb-5 uppercase">INSIGHT</p>
               <p>
                 Breastfeeding and lactation is deeply personal and often
                 underrepresented in advertising. New mothers don't need
@@ -259,8 +259,8 @@ export default function CaseStudyTraditionalMedicinals() {
             </div>
 
             {/* Idea */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-              <p className="leading-[21px] mb-5">IDEA</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] max-w-[304px]">
+              <p className="leading-[21px] mb-5 uppercase">IDEA</p>
               <p>
                 New motherhood takes a village, and the most meaningful support
                 comes from those who've lived it. We invited real moms who were
@@ -272,8 +272,8 @@ export default function CaseStudyTraditionalMedicinals() {
             </div>
 
             {/* Execution */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-              <p className="leading-[21px] mb-5">EXECUTION</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] max-w-[304px]">
+              <p className="leading-[21px] mb-5 uppercase">EXECUTION</p>
               <p>
                 We captured intimate, interview-style testimonials that
                 emphasized warmth, trust, and connection, and paired them with
@@ -285,11 +285,11 @@ export default function CaseStudyTraditionalMedicinals() {
           </div>
 
           {/* Right Column - Image */}
-          <div className="image-reveal lg:flex-1 lg:ml-auto overflow-hidden">
+          <div className="image-reveal lg:flex-1 overflow-hidden flex items-center justify-center">
             <img
               src={lifestyleImage}
               alt="Behind the scenes"
-              className="parallax-image w-full lg:w-[779px] h-auto lg:h-[555px] object-cover lg:ml-auto"
+              className="parallax-image w-full lg:w-[900px] h-auto lg:h-[640px] object-cover"
             />
           </div>
         </div>
