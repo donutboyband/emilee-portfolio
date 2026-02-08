@@ -1,7 +1,5 @@
-const aboutImage =
-  "http://localhost:3845/assets/a203f120478de659acc222ee3c87986195b51d97.png";
-const arrowIcon =
-  "http://localhost:3845/assets/8c9e6b7a56c0d667a68fe7033f9e2be948b0049a.svg";
+const aboutImage = "/assets/a203f120478de659acc222ee3c87986195b51d97.png";
+const arrowIcon = "/assets/8c9e6b7a56c0d667a68fe7033f9e2be948b0049a.svg";
 
 export default function About() {
   return (

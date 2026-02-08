@@ -2,28 +2,19 @@ import { useEffect, useRef, useState } from "react";
 import { useInitialLoader } from "./InitialLoader";
 import gsap from "gsap";
 
-const heroImage =
-  "http://localhost:3845/assets/bc219d29b05830aea41cdafd0492a59848956872.png";
+const heroImage = "/assets/bc219d29b05830aea41cdafd0492a59848956872.png";
 
 // Star icons for role labels
-const starCreativeDirector =
-  "http://localhost:3845/assets/da285ae4164b0300b49d38883e59c7a57c592331.svg";
-const starGraphicDesigner =
-  "http://localhost:3845/assets/2ed42d8fcc7af6d9c2b6c52ff75df05cea37d1c6.svg";
-const starContentCreator =
-  "http://localhost:3845/assets/d60a33db2a19db7edf8ae5c5253e52f11ba71d9d.svg";
-const starStrategist =
-  "http://localhost:3845/assets/6e69015494093abe21f9adbbd9287fcc41c8cec3.svg";
+const starCreativeDirector = "/assets/da285ae4164b0300b49d38883e59c7a57c592331.svg";
+const starGraphicDesigner = "/assets/2ed42d8fcc7af6d9c2b6c52ff75df05cea37d1c6.svg";
+const starContentCreator = "/assets/d60a33db2a19db7edf8ae5c5253e52f11ba71d9d.svg";
+const starStrategist = "/assets/5e069f7969b51cbd70c3025759a5dc834e335db2.svg";
 
 // Desktop star icons (different assets)
-const starDesktopA =
-  "http://localhost:3845/assets/efac3fedde9dea1ef77328ec16af7ab02216344c.svg";
-const starDesktopB =
-  "http://localhost:3845/assets/641e26b5309753f150b4ae3b97e6c61fa1aaa15a.svg";
-const starDesktopC =
-  "http://localhost:3845/assets/542fb3e4d9cc9937db52294a2ad9017820b4d9f7.svg";
-const starDesktopD =
-  "http://localhost:3845/assets/d439fb70d6db20d06e7c593c668c970941c3432f.svg";
+const starDesktopA = "/assets/8a4f1231599a3e44d8525f58bd23e31f1c0eadec.svg";
+const starDesktopB = "/assets/f0f1fcd0aa63f82526ab0ef601ca920fd6cdfab3.svg";
+const starDesktopC = "/assets/8a4f1231599a3e44d8525f58bd23e31f1c0eadec.svg";
+const starDesktopD = "/assets/f0f1fcd0aa63f82526ab0ef601ca920fd6cdfab3.svg";
 
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);

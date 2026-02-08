@@ -5,42 +5,29 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Sofwave section videos
+// Sofwave section videos (still using Figma paths)
 const sofwaveVideo1 = "/_videos/v1/6e4fe88b6b5bfbbdec103cf4eb6257ae5545a071";
 const sofwaveVideo2 = "/_videos/v1/3c4432cdceb7e9de1e49459537aa78ef351653d8";
 
 // Sofwave section images
-const sofwaveImg1 =
-  "http://localhost:3845/assets/26bd70e8b8311f4998c69676c4ab6fd05950c2c1.png";
-const sofwaveImg2 =
-  "http://localhost:3845/assets/cd6d396b4659742602a9e2aa3acb8ce01df2e2c6.png";
-
+const sofwaveImg1 = "/assets/26bd70e8b8311f4998c69676c4ab6fd05950c2c1.png";
+const sofwaveImg2 = "/assets/cd6d396b4659742602a9e2aa3acb8ce01df2e2c6.png";
 
 // Sunmonster section images
-const sunmonsterLogo1 =
-  "http://localhost:3845/assets/882d48dd8139345200346ff7ff79fd2f81b8c08b.png";
-const sunmonsterLogo2 =
-  "http://localhost:3845/assets/22278e746c7134c5b8bd8434d79d9c27cf035255.png";
-const sunmonster10 =
-  "http://localhost:3845/assets/e4465e067c8633436c4d9ad1d9d304741d9e6313.png";
-const sunmonster09 =
-  "http://localhost:3845/assets/f276a46c354e53d35030c861331f36d8064bd896.png";
-const sunmonster08 =
-  "http://localhost:3845/assets/46e4ebeb2279f5923335c8a7249290525f63ed51.png";
-const sunmonster07 =
-  "http://localhost:3845/assets/2bd8ad1994dd78018d3666e36205fbb1f8db6d0e.png";
+const sunmonsterLogo1 = "/assets/882d48dd8139345200346ff7ff79fd2f81b8c08b.png";
+const sunmonsterLogo2 = "/assets/22278e746c7134c5b8bd8434d79d9c27cf035255.png";
+const sunmonster10 = "/assets/e4465e067c8633436c4d9ad1d9d304741d9e6313.png";
+const sunmonster09 = "/assets/f276a46c354e53d35030c861331f36d8064bd896.png";
+const sunmonster08 = "/assets/46e4ebeb2279f5923335c8a7249290525f63ed51.png";
+const sunmonster07 = "/assets/2bd8ad1994dd78018d3666e36205fbb1f8db6d0e.png";
 
 // Picture Garden section images
-const pgScreenshot =
-  "http://localhost:3845/assets/c2e6df98523aee586fe4764f7d97e61effa77623.png";
-const pgTagMustard =
-  "http://localhost:3845/assets/34c421303ed05ccb70faf839b459809b4fea7cc2.png";
-const pgBrandBook =
-  "http://localhost:3845/assets/4921a9d090bff0172805ebff8315190dde190cb1.png";
+const pgScreenshot = "/assets/c2e6df98523aee586fe4764f7d97e61effa77623.png";
+const pgTagMustard = "/assets/34c421303ed05ccb70faf839b459809b4fea7cc2.png";
+const pgBrandBook = "/assets/4921a9d090bff0172805ebff8315190dde190cb1.png";
 
 // Icons
-const starVector =
-  "http://localhost:3845/assets/ffc4032bb4b37f387e4b2903463baae79777353e.svg";
+const starVector = "/assets/ffc4032bb4b37f387e4b2903463baae79777353e.svg";
 
 export default function AdditionalDesignStudies() {
   const containerRef = useRef<HTMLDivElement>(null);

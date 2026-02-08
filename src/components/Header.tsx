@@ -3,21 +3,15 @@ import { TransitionLink } from "./PageTransition";
 import { useInitialLoader } from "./InitialLoader";
 import gsap from "gsap";
 
-// Star SVGs for the drawer menu
-const starCaseStudies =
-  "http://localhost:3845/assets/606428e7567928496d18f83a81eccaf30199064b.svg";
-const starGalleries =
-  "http://localhost:3845/assets/4b3a4b3abef5e1dc664f03721098d2b42147cf45.svg";
-const starAbout =
-  "http://localhost:3845/assets/8015eb105e000f21ca1960cacd15548dea464e19.svg";
-const starResume =
-  "http://localhost:3845/assets/adae3e984ad631d150ff9351c65fb6b2c21209a8.svg";
+// Star SVGs for the drawer menu (using same stars for now)
+const starCaseStudies = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
+const starGalleries = "/assets/006837c8e5eb8c58d86b126eb25546896c754a31.svg";
+const starAbout = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
+const starResume = "/assets/006837c8e5eb8c58d86b126eb25546896c754a31.svg";
 
 // Desktop dropdown stars
-const starLeft =
-  "http://localhost:3845/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
-const starRight =
-  "http://localhost:3845/assets/006837c8e5eb8c58d86b126eb25546896c754a31.svg";
+const starLeft = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
+const starRight = "/assets/006837c8e5eb8c58d86b126eb25546896c754a31.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);

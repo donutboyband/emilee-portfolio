@@ -6,28 +6,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // Images
-const heroImage =
-  "http://localhost:3845/assets/54f6855bedbe7ef18b673f1b25b5b874e36c22b8.png";
-const collageImage =
-  "http://localhost:3845/assets/e1143953c0161ecaa8cd32734a35ee9e297d2149.png";
-const retroImage1 =
-  "http://localhost:3845/assets/dda328a9790a099e49f96775093c5d4b3771c13e.png";
-const retroImage2 =
-  "http://localhost:3845/assets/d5a8b32ae4a58d8d85f1c6203a4dbdfd651acc96.png";
-const logoSystemImage =
-  "http://localhost:3845/assets/d1a216112fd4af77686cf9d2c7383e496eb63b50.png";
-const bottleImage1 =
-  "http://localhost:3845/assets/e25e1a7ea9706d48d6776b892cd64de12f5583bc.png";
-const bottleImage2 =
-  "http://localhost:3845/assets/c983f2312c1d6bd4b9717774fe0f9a62855dc88f.png";
-const webMockImage =
-  "http://localhost:3845/assets/c62971392df1e863eabc2483087ec3d6b1d6673f.png";
-const brochureMockImage =
-  "http://localhost:3845/assets/9962df6ebcd077688c98df27fcdf8b19c8efa9c9.png";
-const arrowIcon =
-  "http://localhost:3845/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
-const starIcon =
-  "http://localhost:3845/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
+const heroImage = "/assets/54f6855bedbe7ef18b673f1b25b5b874e36c22b8.png";
+const collageImage = "/assets/e1143953c0161ecaa8cd32734a35ee9e297d2149.png";
+const retroImage1 = "/assets/dda328a9790a099e49f96775093c5d4b3771c13e.png";
+const retroImage2 = "/assets/d5a8b32ae4a58d8d85f1c6203a4dbdfd651acc96.png";
+const logoSystemImage = "/assets/d1a216112fd4af77686cf9d2c7383e496eb63b50.png";
+const bottleImage1 = "/assets/e25e1a7ea9706d48d6776b892cd64de12f5583bc.png";
+const bottleImage2 = "/assets/c983f2312c1d6bd4b9717774fe0f9a62855dc88f.png";
+const webMockImage = "/assets/c62971392df1e863eabc2483087ec3d6b1d6673f.png";
+const brochureMockImage = "/assets/9962df6ebcd077688c98df27fcdf8b19c8efa9c9.png";
+const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
+const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 
 export default function CaseStudyNalgene() {
   const containerRef = useRef<HTMLDivElement>(null);

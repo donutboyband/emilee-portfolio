@@ -6,14 +6,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 // Images
-const heroImage =
-  "http://localhost:3845/assets/343cab8934af33e34f9a29a7629c76689057ac57.png";
-const lifestyleImage =
-  "http://localhost:3845/assets/cf65c10e851254b63f64e0ca84ff0d8586e0add1.png";
-const arrowIcon =
-  "http://localhost:3845/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
-const starIcon =
-  "http://localhost:3845/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
+const heroImage = "/assets/343cab8934af33e34f9a29a7629c76689057ac57.png";
+const lifestyleImage = "/assets/cf65c10e851254b63f64e0ca84ff0d8586e0add1.png";
+const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
+const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 
 export default function CaseStudyTraditionalMedicinals() {
   const containerRef = useRef<HTMLDivElement>(null);
