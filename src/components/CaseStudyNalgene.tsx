@@ -173,11 +173,11 @@ export default function CaseStudyNalgene() {
       className="w-full bg-white font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
     >
       {/* Hero Section */}
-      <section className="hero-section relative w-full h-[605px] overflow-hidden">
+      <section className="hero-section relative w-full md:h-[605px] md:overflow-hidden">
         <img
           src={heroImage}
           alt="Nalgene 75th Anniversary"
-          className="hero-image absolute inset-0 w-full h-full object-cover"
+          className="hero-image md:absolute md:inset-0 w-full md:h-full md:object-cover"
         />
       </section>
 
