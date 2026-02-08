@@ -285,7 +285,7 @@ export default function CaseStudyTraditionalMedicinals() {
           </div>
 
           {/* Right Column - Image */}
-          <div className="image-reveal lg:flex-1 overflow-hidden flex items-center justify-center">
+          <div className="image-reveal lg:flex-1 overflow-hidden flex items-center justify-end">
             <img
               src={lifestyleImage}
               alt="Behind the scenes"
