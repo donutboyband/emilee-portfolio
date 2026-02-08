@@ -191,7 +191,7 @@ export default function Hero() {
           <img
             src={heroImage}
             alt="Portrait of Emilee Durrett"
-            className="w-full h-full object-cover object-left"
+            className="w-full h-full object-cover object-[78%_center]"
           />
         </div>
 

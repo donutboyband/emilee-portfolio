@@ -245,7 +245,7 @@ export default function CaseStudyTraditionalMedicinals() {
       <section className="px-6 md:px-[37px] py-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-0">
           {/* Left Column - Text */}
-          <div className="lg:w-[304px] lg:shrink-0 space-y-[108px]">
+          <div className="order-2 lg:order-1 lg:w-[304px] lg:shrink-0 space-y-[108px]">
             {/* Insight */}
             <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] max-w-[304px]">
               <p className="leading-[21px] mb-5 uppercase">INSIGHT</p>
@@ -285,7 +285,7 @@ export default function CaseStudyTraditionalMedicinals() {
           </div>
 
           {/* Right Column - Image */}
-          <div className="image-reveal lg:flex-1 overflow-hidden flex items-center justify-end">
+          <div className="order-1 lg:order-2 image-reveal lg:flex-1 overflow-hidden flex items-center justify-end">
             <img
               src={lifestyleImage}
               alt="Behind the scenes"
