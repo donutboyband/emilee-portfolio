@@ -346,7 +346,7 @@ export default function CaseStudyDeborahPagani() {
           </div>
 
           {/* Media - right columns */}
-          <div className="flex flex-col sm:flex-row gap-6 flex-1">
+          <div className="flex flex-col sm:flex-row gap-6 flex-1 lg:ml-16">
             {/* Fragrance Image */}
             <div className="image-reveal flex-1">
               <img
