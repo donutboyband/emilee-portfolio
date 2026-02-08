@@ -208,7 +208,7 @@ export default function CaseStudyTogethxr() {
       </section>
 
       {/* BTS Image Section */}
-      <section className="py-8 flex justify-center">
+      <section className="pt-8 pb-2 md:pb-8 flex justify-center">
         <div className="image-reveal w-full max-w-[848px] h-[533px] overflow-hidden">
           <img
             src={btsImage}

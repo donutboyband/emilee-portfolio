@@ -7,7 +7,7 @@ import VideoPlayer from './VideoPlayer';
 gsap.registerPlugin(ScrollTrigger);
 
 // Images
-const heroImage = "/assets/2644aa5239fa0177cef9990fa5c5782972a240c2.png";
+const heroImage = "/assets/DP-hero.png";
 const fragranceGif = "/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.png";
 
 // Packaging images (masonry grid)
@@ -243,14 +243,14 @@ export default function CaseStudyDeborahPagani() {
       </section>
 
       {/* Sign Up Banner Video Section */}
-      <section className="py-8 flex justify-center">
+      <section className="py-8 px-4 flex justify-center">
         <VideoPlayer
                   src={signUpBannerVideo}
                   autoPlay
                   controls={false}
                   loop
                   muted
-                  className="video-reveal w-full max-w-[848px] h-[533px]"
+                  className="video-reveal w-full max-w-[848px] aspect-auto"
                   ariaLabel="Behind the scenes video of Mother's Milk campaign"
                 />
       </section>
@@ -290,9 +290,9 @@ export default function CaseStudyDeborahPagani() {
 
       {/* Challenge Sections + Media */}
       <section className="px-6 md:px-[37px] py-16">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start overflow-x-hidden">
           {/* Challenge Text - left column */}
-          <div className="flex flex-col gap-8 w-full lg:w-[368px] lg:shrink-0">
+          <div className="order-2 lg:order-1 flex flex-col gap-8 w-full lg:w-[368px] lg:shrink-0">
             {/* Beyond the Campaign Framework */}
             <div className="fade-in text-[10px] tracking-[0.88px] leading-[15px]">
               <p className="leading-[21px] mb-4">BEYOND THE CAMPAIGN FRAMEWORK</p>
@@ -346,7 +346,7 @@ export default function CaseStudyDeborahPagani() {
           </div>
 
           {/* Media - right columns */}
-          <div className="flex flex-col sm:flex-row gap-6 flex-1 lg:ml-16">
+          <div className="order-1 lg:order-2 flex flex-col sm:flex-row gap-6 flex-1 lg:ml-16">
             {/* Fragrance Image */}
             <div className="image-reveal flex-1">
               <img
