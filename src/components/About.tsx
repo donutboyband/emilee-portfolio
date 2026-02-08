@@ -100,7 +100,8 @@ export default function About() {
 
           {/* Resume link */}
           <a
-            href="#resume"
+            href="/assets/EmileeDurrettResume2026.pdf"
+            download
             className="inline-flex items-center gap-2 text-[11px] tracking-[0.88px] hover:opacity-70 transition-opacity"
           >
             <span>YOU CAN TAKE A LOOK AT MY RESUME HERE</span>
