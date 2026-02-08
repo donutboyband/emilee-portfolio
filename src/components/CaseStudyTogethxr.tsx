@@ -219,7 +219,8 @@ export default function CaseStudyTogethxr() {
       </section>
 
       {/* Role Section */}
-      <section className="px-6 md:pl-[296px] py-16">
+      <section className="px-8 py-8 justify-center">
+        <div className="max-w-[848px] flex justify-start items-center mx-auto">
         <div className="fade-in text-[11px] tracking-[0.88px] leading-[20px] uppercase max-w-[328px]">
           <p className="mb-4">ROLE: Creative Director & Designer</p>
           <ul className="stagger-list list-disc ml-4 space-y-1">
@@ -229,6 +230,7 @@ export default function CaseStudyTogethxr() {
             <li>Concept Video Sizzle Treatment</li>
             <li>Final Output Video Edit & Delivery</li>
           </ul>
+        </div>
         </div>
       </section>
 
@@ -245,8 +247,8 @@ export default function CaseStudyTogethxr() {
           {/* Left Column - Text blocks stacked */}
           <div className="lg:w-[304px] lg:shrink-0 space-y-[108px]">
             {/* Opportunity */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-              <p className="leading-[21px] mb-5">OPPORTUNITY</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] max-w-[304px]">
+              <p className="leading-[21px] mb-5 uppercase">OPPORTUNITY</p>
               <p>
                 TOGETHXR needed a campaign that could cut through crowded digital
                 placements while clearly communicating the value of their
@@ -257,8 +259,8 @@ export default function CaseStudyTogethxr() {
             </div>
 
             {/* Building on Momentum */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-              <p className="leading-[21px] mb-5">BUILDING ON MOMENTUM</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] max-w-[304px]">
+              <p className="leading-[21px] mb-5 uppercase">BUILDING ON MOMENTUM</p>
               <p>
                 TOGETHXR had already made a huge impact in the world of sports
                 with a viral moment around their Nike collaboration "Everyone
@@ -269,8 +271,8 @@ export default function CaseStudyTogethxr() {
             </div>
 
             {/* Execution */}
-            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] uppercase max-w-[304px]">
-              <p className="leading-[21px] mb-5">EXECUTION</p>
+            <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px] max-w-[304px]">
+              <p className="leading-[21px] mb-5 uppercase">EXECUTION</p>
               <p>
                 Before landing on the final direction, I developed three distinct
                 campaign platforms, each with its own narrative, visual language,
@@ -285,7 +287,7 @@ export default function CaseStudyTogethxr() {
             <img
               src={conceptsImage}
               alt="Campaign concepts"
-              className="w-full lg:w-[952px] h-auto lg:h-[538px] object-cover lg:ml-auto"
+              className="w-full lg:w-[800px] h-auto lg:h-[450px] object-cover lg:ml-auto"
             />
           </div>
         </div>
