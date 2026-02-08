@@ -11,12 +11,12 @@ const heroImage = "/assets/DP-hero.webp";
 const fragranceGif = "/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.png";
 
 // Packaging images (masonry grid)
-const packagingImg1 = "/assets/1b4100a98ad510efe33cb9e720b366b9ddf913c2.png"; // Large left
-const packagingImg2 = "/assets/ba443e6ccf5c433c57bf12536f0baa507ee4e10a.png"; // Top middle
-const packagingImg3 = "/assets/307290196c8dc2e479913911503abc4d521f659d.png"; // Middle center
-const packagingImg4 = "/assets/06f4418e3859d7ca2f6fb05a03a0461246d6f490.png"; // Bottom left
-const packagingImg5 = "/assets/0d8eaa36c8d18d21af150ac3595e701a39aea8c5.png"; // Bottom middle
-const packagingImg6 = "/assets/7548773976e07f4ad39046debc08a23ad7ad9c15.png"; // Large right
+const packagingImg1 = "/assets/1b4100a98ad510efe33cb9e720b366b9ddf913c2.webp"; // Large left
+const packagingImg2 = "/assets/ba443e6ccf5c433c57bf12536f0baa507ee4e10a.webp"; // Top middle
+const packagingImg3 = "/assets/307290196c8dc2e479913911503abc4d521f659d.webp"; // Middle center
+const packagingImg4 = "/assets/06f4418e3859d7ca2f6fb05a03a0461246d6f490.webp"; // Bottom left
+const packagingImg5 = "/assets/0d8eaa36c8d18d21af150ac3595e701a39aea8c5.webp"; // Bottom middle
+const packagingImg6 = "/assets/7548773976e07f4ad39046debc08a23ad7ad9c15.webp"; // Large right
 
 // Production images (BTS row)
 const productionImg1 = "/assets/a463f4f469b0fa87488a705fdce555ffa2067617.webp";
