@@ -231,7 +231,7 @@ export default function CaseStudyNalgene() {
       <section className="px-6 md:px-[37px] py-16">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           {/* Left Column - Text */}
-          <div className="flex flex-col gap-8 w-full lg:w-[304px] lg:shrink-0">
+          <div className="order-2 lg:order-1 flex flex-col gap-8 w-full lg:w-[304px] lg:shrink-0">
             {/* Insight */}
             <div className="fade-in text-[11px] tracking-[0.88px] leading-[15px]">
               <p className="leading-[21px] mb-4 uppercase">INSIGHT</p>
@@ -266,7 +266,7 @@ export default function CaseStudyNalgene() {
           </div>
 
           {/* Right Column - Retro Images */}
-          <div className="image-pair flex flex-col sm:flex-row gap-4 flex-1 lg:ml-auto">
+          <div className="order-1 lg:order-2 image-pair flex flex-col sm:flex-row gap-4 flex-1 lg:ml-auto">
             <div className="pair-item flex-1 overflow-hidden">
               <img
                 src={retroImage2}
