@@ -12,7 +12,7 @@ const keepUpMicro = "/assets/videos/keepup_micro.mp4";
 const keepUpDemo = "/assets/video/keepup_demo.mp4";
 
 // Images
-const heroImage = "/assets/c4cfbd03e4f09a9135ae9078ab30f08057982e5c.png";
+const heroImage = "/assets/togethxrhero.png";
 const btsImage = "/assets/74d5050a6be3a969b2778a35a5e57f8c5dc74bec.png";
 const conceptsImage = "/assets/2185f5df26e264fd54e75a9c3fb05321a2f16e10.png";
 const direction01Image = "/assets/d57a0970620071cbfed3bba2976b444ded853d86.png";
@@ -179,11 +179,11 @@ export default function CaseStudyTogethxr() {
       className="w-full bg-white font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
     >
       {/* Hero Section */}
-      <section className="hero-section relative w-full h-[605px] overflow-hidden">
+      <section className="hero-section relative w-full md:h-[605px] md:overflow-hidden">
         <img
           src={heroImage}
           alt="TOGETHXR Campaign"
-          className="hero-image absolute inset-0 w-full h-full object-cover"
+          className="hero-image md:absolute md:inset-0 w-full md:h-full md:object-cover"
         />
       </section>
 

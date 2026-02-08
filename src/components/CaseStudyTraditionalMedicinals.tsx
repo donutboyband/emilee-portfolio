@@ -207,14 +207,14 @@ export default function CaseStudyTraditionalMedicinals() {
       </section>
 
       {/* Video Placeholder Section */}
-      <section className="py-8 flex justify-center">
+      <section className="py-8 flex justify-center px-4">
         <VideoPlayer
           src={mmBTS}
           autoPlay
           controls={false}
           loop
           muted
-          className="video-reveal w-full max-w-[848px] h-[533px]"
+          className="video-reveal w-full max-w-[848px] aspect-auto"
           ariaLabel="Behind the scenes video of Mother's Milk campaign"
         />
       </section>
