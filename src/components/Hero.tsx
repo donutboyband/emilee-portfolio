@@ -186,12 +186,12 @@ export default function Hero() {
     <section ref={sectionRef} className="relative w-full bg-white font-[Helvetica_Neue,Helvetica,Arial,sans-serif]">
       {/* Mobile Layout */}
       <div className="md:hidden relative w-full h-[656px] overflow-hidden">
-        {/* Image container - extends beyond left edge */}
-        <div ref={mobileImageRef} className="absolute top-0 left-[-99px] w-[589px] h-full">
+        {/* Image container - face on left half of viewport */}
+        <div ref={mobileImageRef} className="absolute top-0 left-0 w-full h-full">
           <img
             src={heroImage}
             alt="Portrait of Emilee Durrett"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-[25%_center]"
           />
         </div>
 
