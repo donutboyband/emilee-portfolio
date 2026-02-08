@@ -16,7 +16,7 @@ function RootLayout() {
     <SmoothScroll>
       <InitialLoaderProvider>
         <PageTransitionProvider>
-          <div className="min-h-screen bg-white text-black">
+          <div className="mx-auto max-w-[90rem] min-h-screen bg-white text-black">
             <Header />
             <main>
               <Outlet />
