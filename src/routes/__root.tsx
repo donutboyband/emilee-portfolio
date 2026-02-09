@@ -5,6 +5,7 @@ import SmoothScroll from "../components/SmoothScroll";
 import { PageTransitionProvider } from "../components/PageTransition";
 import { InitialLoaderProvider } from "../components/InitialLoader";
 import NotFound from "../components/NotFound";
+import { Analytics } from "@vercel/analytics/react"
 
 export const Route = createRootRoute({
   component: RootLayout,
@@ -23,6 +24,7 @@ function RootLayout() {
             </main>
             <Footer />
           </div>
+          <Analytics />
         </PageTransitionProvider>
       </InitialLoaderProvider>
     </SmoothScroll>
