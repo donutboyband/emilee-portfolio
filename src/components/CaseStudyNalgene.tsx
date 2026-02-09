@@ -345,7 +345,6 @@ export default function CaseStudyNalgene() {
         >
           <img src={starIcon} alt="" className="star-spin w-[22px] h-[22px]" />
           <span>BACK TO HOME</span>
-          <img src={arrowIcon} alt="" className="w-[15px] h-auto" />
         </TransitionLink>
       </section>
     </div>

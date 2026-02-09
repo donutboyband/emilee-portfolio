@@ -276,7 +276,6 @@ export default function CommercialPhotography() {
             className="star-spin w-3 h-3"
           />
           <span>NEXT GALLERY</span>
-          <img src={arrow} alt="" className="w-4 h-2" />
         </TransitionLink>
       </div>
     </div>

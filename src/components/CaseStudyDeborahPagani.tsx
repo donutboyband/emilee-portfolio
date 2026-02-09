@@ -42,7 +42,6 @@ const launchAdVideo = "/assets/videos/debpag_advibe.mp4";
 const websiteScrollVideo = "/assets/videos/debpag_rollout.mp4";
 const btsReelVideo = "/assets/videos/debpag_bts.mp4";
 
-const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 
 export default function CaseStudyDeborahPagani() {
@@ -203,7 +202,7 @@ export default function CaseStudyDeborahPagani() {
       className="w-full bg-white font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
     >
       {/* Hero Section */}
-      <section className="hero-section relative w-full h-[605px] overflow-hidden">
+      <section className="hero-section relative w-full h-151.25 overflow-hidden">
         <img
           src={heroImage}
           alt="Deborah Pagani Beauty"
@@ -212,15 +211,15 @@ export default function CaseStudyDeborahPagani() {
       </section>
 
       {/* Intro Section */}
-      <section className="px-6 md:px-[37px] pt-16 md:pt-20 pb-8">
+      <section className="px-6 md:px-9.25 pt-16 md:pt-20 pb-8">
         <p className="fade-in text-[11px] tracking-[0.88px] mb-4">
           DEBORAH PAGANI BEAUTY
         </p>
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8">
-          <h2 className="headline-slide font-light text-[48px] md:text-[82px] tracking-[-4px] md:tracking-[-6.56px] leading-[1] md:leading-[64px]">
+          <h2 className="headline-slide font-light text-[48px] md:text-[82px] tracking-[-4px] md:tracking-[-6.56px] leading-noneemd:leading-16]">
             PRODUCT LAUNCH
           </h2>
-          <div className="fade-in text-[11px] tracking-[0.88px] leading-[1.5] max-w-[395px] space-y-4">
+          <div className="fade-in text-[11px] tracking-[0.88px] leading-normal max-w-[395px] space-y-4">
             <p>
               For the launch of Deborah Pagani Beauty's first two products, I
               led creative direction, strategy, and design across every brand
@@ -589,7 +588,6 @@ export default function CaseStudyDeborahPagani() {
         >
           <img src={starIcon} alt="" className="star-spin w-[22px] h-[22px]" />
           <span>NEXT CASE STUDY</span>
-          <img src={arrowIcon} alt="" className="w-[15px] h-auto" />
         </TransitionLink>
       </section>
     </div>

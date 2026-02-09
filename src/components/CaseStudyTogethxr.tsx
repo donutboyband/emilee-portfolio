@@ -446,7 +446,6 @@ export default function CaseStudyTogethxr() {
         >
           <img src={starIcon} alt="" className="star-spin w-[22px] h-[22px]" />
           <span>NEXT CASE STUDY</span>
-          <img src={arrowIcon} alt="" className="w-[15px] h-auto" />
         </TransitionLink>
       </section>
     </div>

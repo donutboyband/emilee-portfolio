@@ -13,7 +13,7 @@ export default function Footer() {
     if (!footer) return;
 
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     if (prefersReducedMotion || !isFirstVisit) {
@@ -35,7 +35,7 @@ export default function Footer() {
     hasAnimated.current = true;
 
     const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
 
     if (prefersReducedMotion) return;
@@ -51,14 +51,25 @@ export default function Footer() {
   }, [shouldAnimate, isFirstVisit]);
 
   return (
-    <footer ref={footerRef} className="flex w-full flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 bg-white px-4 sm:px-6 py-4 text-[10px] sm:text-[12px] tracking-tight border-t border-black/5 font-[Helvetica_Neue,Helvetica,Arial,sans-serif]">
+    <footer
+      ref={footerRef}
+      className="flex w-full flex-col sm:flex-row items-center justify-between gap-2 sm:gap-0 bg-white px-4 sm:px-6 py-4 text-[10px] sm:text-[12px] tracking-tight border-t border-black/5 font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
+    >
       <span className="font-normal">EMILEE DURRETT</span>
-      <a
-        href="mailto:em@emileecreative.com"
-        className="font-normal hover:opacity-70 transition-opacity"
-      >
-        em@emileecreative.com
-      </a>
+      <div className="font-normal">
+        <span className="text-gray-300">
+          developed by {" "}
+          <a className="text-blue-300" href="https://chasedurrett.dev" target="_blank">
+            donutboyband
+          </a>
+        </span>
+        <a
+          href="mailto:em@emileecreative.com"
+          className="font-normal hover:opacity-70 transition-opacity pl-4"
+        >
+          em@emileecreative.com
+        </a>
+      </div>
     </footer>
   );
 }
