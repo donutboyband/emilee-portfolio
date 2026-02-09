@@ -47,7 +47,6 @@ const img19 = "/assets/5f742e5dd8f7a23c0c87feb534dec0bffac33fe2.webp";
 const img20 = "/assets/75c78e269c98215da892a78f91b24972f5352b98.webp";
 
 // Arrow
-const arrow = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
 const starVector = "/assets/ffc4032bb4b37f387e4b2903463baae79777353e.svg";
 
 export default function CommercialPhotography() {

@@ -21,7 +21,6 @@ const phoneImage1 = "/assets/c4f332c380d6ddee0f6f929b04f5bff629803e32.webp";
 const phoneImage2 = "/assets/b14010e3a0ead6c38a07ccc888beacc1a8b59873.webp";
 const phoneImage3 = "/assets/e668e2eb12b0bc7817688a10cea48b00e54531d9.webp";
 const finalImage1 = "/assets/84c73b49dae3cc5d70e20386aaed773726d847f0.png";
-const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 
 export default function CaseStudyTogethxr() {

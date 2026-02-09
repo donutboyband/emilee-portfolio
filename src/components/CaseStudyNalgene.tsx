@@ -15,7 +15,6 @@ const bottleImage1 = "/assets/e25e1a7ea9706d48d6776b892cd64de12f5583bc.webp";
 const bottleImage2 = "/assets/c983f2312c1d6bd4b9717774fe0f9a62855dc88f.webp";
 const webMockImage = "/assets/c62971392df1e863eabc2483087ec3d6b1d6673f.webp";
 const brochureMockImage = "/assets/9962df6ebcd077688c98df27fcdf8b19c8efa9c9.webp";
-const arrowIcon = "/assets/40dbd6901addc15b20ac3d1de97b753f18c117a6.svg";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 
 export default function CaseStudyNalgene() {
