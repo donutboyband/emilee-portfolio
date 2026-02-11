@@ -57,7 +57,7 @@ export default function Footer() {
     >
       <span className="font-normal">EMILEE DURRETT</span>
       <div className="font-normal">
-        <span className="text-gray-300">
+        <span className="text-gray-300 text-[10px]">
           developed by {" "}
           <a className="text-blue-300" href="https://chasedurrett.dev" target="_blank">
             donutboyband
