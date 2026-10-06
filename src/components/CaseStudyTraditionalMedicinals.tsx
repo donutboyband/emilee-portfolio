@@ -278,7 +278,7 @@ export default function CaseStudyTraditionalMedicinals() {
       {/* Hero Section */}
       <section className="hero-section relative w-full h-[605px] overflow-hidden">
         <img
-          src={heroImage}
+          src={heroImage} fetchPriority="high"
           alt="Traditional Medicinals Mother's Milk"
           className="hero-image absolute inset-0 w-full h-full object-cover"
         />

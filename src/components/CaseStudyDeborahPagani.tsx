@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Images
 const heroImage = "/assets/DP-hero.webp";
-const fragranceGif = "/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.png";
+const fragranceGif = "/assets/aa610b929af66f984c888fc120c4fd767ea5cd8e.webp";
 
 // Packaging images (masonry grid)
 const packagingImg1 = "/assets/1b4100a98ad510efe33cb9e720b366b9ddf913c2.webp"; // Large left
@@ -33,8 +33,8 @@ const rolloutImg3 = "/assets/bd645f60dc15a8edefaa30f79b1d4514faffadcb.webp";
 
 // Final section images
 const finalImg1 = "/assets/f586ed9401841bd798cf0e8e0c8d5f64df442ce4.webp";
-const finalImg2 = "/assets/d36b7860aaeea0aded1b7b2bccfabd1177a82078.png";
-const finalImg3 = "/assets/ad907cc81db4404bb21216c852fa1f85f2bee151.png";
+const finalImg2 = "/assets/d36b7860aaeea0aded1b7b2bccfabd1177a82078.webp";
+const finalImg3 = "/assets/ad907cc81db4404bb21216c852fa1f85f2bee151.webp";
 
 // Videos (still need to be downloaded separately)
 const signUpBannerVideo = "/assets/videos/debpag_micro.mp4";
@@ -204,7 +204,7 @@ export default function CaseStudyDeborahPagani() {
       {/* Hero Section */}
       <section className="hero-section relative w-full h-151.25 overflow-hidden">
         <img
-          src={heroImage}
+          src={heroImage} fetchPriority="high"
           alt="Deborah Pagani Beauty"
           className="hero-image absolute inset-0 w-full h-full object-cover object-center"
         />
@@ -349,7 +349,7 @@ export default function CaseStudyDeborahPagani() {
             {/* Fragrance Image */}
             <div className="image-reveal flex-1">
               <img
-                src={fragranceGif}
+                src={fragranceGif} loading="lazy"
                 alt="Deborah Pagani Beauty fragrance product showcase"
                 className="w-full h-auto lg:h-[700px] object-cover"
               />
@@ -385,7 +385,7 @@ export default function CaseStudyDeborahPagani() {
           {/* Large left image */}
           <div className="grid-item overflow-hidden md:absolute md:left-0 md:top-0 md:w-[41%] md:h-[64%]">
             <img
-              src={packagingImg1}
+              src={packagingImg1} loading="lazy"
               alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
@@ -393,7 +393,7 @@ export default function CaseStudyDeborahPagani() {
           {/* Top middle small image */}
           <div className="grid-item overflow-hidden md:absolute md:left-[31%] md:top-[1.5%] md:w-[34%] md:h-[17.5%]">
             <img
-              src={packagingImg2}
+              src={packagingImg2} loading="lazy"
               alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
@@ -401,7 +401,7 @@ export default function CaseStudyDeborahPagani() {
           {/* Middle center image */}
           <div className="grid-item overflow-hidden md:absolute md:left-[42%] md:top-[26%] md:w-[23%] md:h-[48%]">
             <img
-              src={packagingImg3}
+              src={packagingImg3} loading="lazy"
               alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
@@ -409,7 +409,7 @@ export default function CaseStudyDeborahPagani() {
           {/* Bottom left image */}
           <div className="grid-item overflow-hidden md:absolute md:left-[12.5%] md:top-[62%] md:w-[26%] md:h-[44%]">
             <img
-              src={packagingImg4}
+              src={packagingImg4} loading="lazy"
               alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
@@ -417,7 +417,7 @@ export default function CaseStudyDeborahPagani() {
           {/* Bottom middle image */}
           <div className="grid-item overflow-hidden md:absolute md:left-[40%] md:top-[79%] md:w-[27%] md:h-[21%]">
             <img
-              src={packagingImg5}
+              src={packagingImg5} loading="lazy"
               alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
@@ -425,7 +425,7 @@ export default function CaseStudyDeborahPagani() {
           {/* Large right image */}
           <div className="grid-item overflow-hidden md:absolute md:left-[68%] md:top-[21%] md:w-[28%] md:h-[56%]">
             <img
-              src={packagingImg6}
+              src={packagingImg6} loading="lazy"
               alt="Deborah Pagani Beauty luxury haircare packaging design"
               className="w-full h-full object-cover aspect-[3/4] md:aspect-auto"
             />
@@ -446,42 +446,42 @@ export default function CaseStudyDeborahPagani() {
         <div className="image-grid grid grid-cols-3 md:grid-cols-6 gap-0">
           <div className="grid-item overflow-hidden">
             <img
-              src={productionImg1}
+              src={productionImg1} loading="lazy"
               alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
-              src={productionImg2}
+              src={productionImg2} loading="lazy"
               alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
-              src={productionImg3}
+              src={productionImg3} loading="lazy"
               alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
-              src={productionImg4}
+              src={productionImg4} loading="lazy"
               alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
-              src={productionImg5}
+              src={productionImg5} loading="lazy"
               alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
           </div>
           <div className="grid-item overflow-hidden">
             <img
-              src={productionImg6}
+              src={productionImg6} loading="lazy"
               alt="Deborah Pagani Beauty photo shoot behind the scenes"
               className="w-full h-auto md:h-[313px] object-cover aspect-[3/4] md:aspect-auto"
             />
@@ -515,21 +515,21 @@ export default function CaseStudyDeborahPagani() {
           <div className="image-grid grid grid-cols-1 sm:grid-cols-3 gap-2">
             <div className="grid-item overflow-hidden">
               <img
-                src={rolloutImg1}
+                src={rolloutImg1} loading="lazy"
                 alt="Deborah Pagani Beauty social media marketing rollout"
                 className="w-full h-auto sm:h-[800px] object-cover"
               />
             </div>
             <div className="grid-item overflow-hidden">
               <img
-                src={rolloutImg2}
+                src={rolloutImg2} loading="lazy"
                 alt="Deborah Pagani Beauty social media marketing rollout"
                 className="w-full h-auto sm:h-[800px] object-cover"
               />
             </div>
             <div className="grid-item overflow-hidden">
               <img
-                src={rolloutImg3}
+                src={rolloutImg3} loading="lazy"
                 alt="Deborah Pagani Beauty social media marketing rollout"
                 className="w-full h-auto sm:h-[800px] object-cover"
               />
@@ -544,14 +544,14 @@ export default function CaseStudyDeborahPagani() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           <div className="image-reveal overflow-hidden">
             <img
-              src={finalImg1}
+              src={finalImg1} loading="lazy"
               alt="Deborah Pagani Beauty final campaign photography"
               className="parallax-image w-full h-auto md:h-[821px] object-cover"
             />
           </div>
           <div className="image-reveal overflow-hidden">
             <img
-              src={finalImg2}
+              src={finalImg2} loading="lazy"
               alt="Deborah Pagani Beauty final campaign photography"
               className="parallax-image w-full h-auto md:h-[821px] object-cover"
             />
@@ -571,7 +571,7 @@ export default function CaseStudyDeborahPagani() {
           />
           <div className="image-reveal overflow-hidden">
             <img
-              src={finalImg3}
+              src={finalImg3} loading="lazy"
               alt="Deborah Pagani Beauty product results before and after"
               className="w-full h-auto md:h-[1053px] object-cover"
             />

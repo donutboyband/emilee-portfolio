@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { useLazyAutoplay } from "../hooks/useLazyAutoplay";
 
 interface VideoPlayerProps {
   src: string;
@@ -32,6 +33,9 @@ export default function VideoPlayer({
   const [duration, setDuration] = useState(0);
   const [showControls, setShowControls] = useState(false);
   const controlsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Autoplay starts when the video nears the viewport rather than on page load
+  useLazyAutoplay(videoRef, autoPlay);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -163,7 +167,7 @@ export default function VideoPlayer({
         ref={videoRef}
         src={src}
         poster={poster}
-        autoPlay={autoPlay}
+        preload="metadata"
         loop={loop}
         muted={muted}
         playsInline={playsInline}

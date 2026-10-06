@@ -14,13 +14,13 @@ const keepUpDemo = "/assets/videos/keepup_demo.mp4";
 // Images
 const heroImage = "/assets/togethxrhero.webp";
 const btsImage = "/assets/74d5050a6be3a969b2778a35a5e57f8c5dc74bec.webp";
-const conceptsImage = "/assets/Together-Concepts-GIF.png";
+const conceptsImage = "/assets/Together-Concepts-GIF.webp";
 const direction01Image = "/assets/d57a0970620071cbfed3bba2976b444ded853d86.webp";
-const direction01Image2 = "/assets/2195b1c1fe9a200b3ba299a41d702d8eda760e0b.png";
+const direction01Image2 = "/assets/2195b1c1fe9a200b3ba299a41d702d8eda760e0b.webp";
 const phoneImage1 = "/assets/c4f332c380d6ddee0f6f929b04f5bff629803e32.webp";
 const phoneImage2 = "/assets/b14010e3a0ead6c38a07ccc888beacc1a8b59873.webp";
 const phoneImage3 = "/assets/e668e2eb12b0bc7817688a10cea48b00e54531d9.webp";
-const finalImage1 = "/assets/84c73b49dae3cc5d70e20386aaed773726d847f0.png";
+const finalImage1 = "/assets/84c73b49dae3cc5d70e20386aaed773726d847f0.webp";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
 
 export default function CaseStudyTogethxr() {
@@ -180,7 +180,7 @@ export default function CaseStudyTogethxr() {
       {/* Hero Section */}
       <section className="hero-section relative w-full md:h-[605px] md:overflow-hidden">
         <img
-          src={heroImage}
+          src={heroImage} fetchPriority="high"
           alt="TOGETHXR Campaign"
           className="hero-image md:absolute md:inset-0 w-full md:h-full md:object-cover"
         />
@@ -210,7 +210,7 @@ export default function CaseStudyTogethxr() {
       <section className="pt-8 pb-2 md:pb-8 flex justify-center">
         <div className="image-reveal w-full max-w-[848px] h-[533px] overflow-hidden">
           <img
-            src={btsImage}
+            src={btsImage} loading="lazy"
             alt="TOGETHXR campaign behind the scenes photo"
             className="parallax-image w-full h-full object-cover"
           />
@@ -284,7 +284,7 @@ export default function CaseStudyTogethxr() {
           {/* Right Column - Concepts Image */}
           <div className="image-reveal lg:flex-1 lg:ml-auto overflow-hidden flex items-center">
             <img
-              src={conceptsImage}
+              src={conceptsImage} loading="lazy"
               alt="TOGETHXR creative campaign concept explorations"
               className="w-full lg:w-[800px] h-auto lg:h-[450px] object-cover lg:ml-auto"
             />
@@ -306,7 +306,7 @@ export default function CaseStudyTogethxr() {
         {/* Full bleed image */}
         <div className="image-reveal overflow-hidden">
           <img
-            src={direction01Image}
+            src={direction01Image} loading="lazy"
             alt="TOGETHXR Direction 01 creative concept presentation"
             className="parallax-image w-full h-auto object-cover"
           />
@@ -316,7 +316,7 @@ export default function CaseStudyTogethxr() {
         <div className="px-6 md:px-[42px] mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="image-reveal overflow-hidden">
             <img
-              src={direction01Image2}
+              src={direction01Image2} loading="lazy"
               alt="TOGETHXR Direction 01 design detail"
               className="w-full h-auto lg:h-[829px] object-cover"
             />
@@ -343,21 +343,21 @@ export default function CaseStudyTogethxr() {
         <div className="phone-section grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-16">
           <div className="phone-mockup overflow-hidden">
             <img
-              src={phoneImage3}
+              src={phoneImage3} loading="lazy"
               alt="TOGETHXR Try to Keep Up campaign on mobile device mockup"
               className="w-full h-auto lg:h-[667px] object-cover"
             />
           </div>
           <div className="phone-mockup overflow-hidden">
             <img
-              src={phoneImage1}
+              src={phoneImage1} loading="lazy"
               alt="TOGETHXR Try to Keep Up campaign on mobile device mockup"
               className="w-full h-auto lg:h-[668px] object-cover"
             />
           </div>
           <div className="phone-mockup overflow-hidden">
             <img
-              src={phoneImage2}
+              src={phoneImage2} loading="lazy"
               alt="TOGETHXR Try to Keep Up campaign on mobile device mockup"
               className="w-full h-auto lg:h-[667px] object-cover"
             />
@@ -368,7 +368,7 @@ export default function CaseStudyTogethxr() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16 pb-12">
           <div className="image-reveal overflow-hidden">
             <img
-              src={finalImage1}
+              src={finalImage1} loading="lazy"
               alt="TOGETHXR final campaign execution imagery"
               className="w-full h-auto lg:h-[893px] object-cover"
             />

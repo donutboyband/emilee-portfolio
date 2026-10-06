@@ -174,7 +174,7 @@ export default function CaseStudyNalgene() {
       {/* Hero Section */}
       <section className="hero-section relative w-full md:h-[605px] md:overflow-hidden">
         <img
-          src={heroImage}
+          src={heroImage} fetchPriority="high"
           alt="Nalgene 75th Anniversary"
           className="hero-image md:absolute md:inset-0 w-full md:h-full md:object-cover"
         />
@@ -268,14 +268,14 @@ export default function CaseStudyNalgene() {
           <div className="order-1 lg:order-2 image-pair flex flex-col sm:flex-row gap-4 flex-1 lg:ml-auto">
             <div className="pair-item flex-1 overflow-hidden">
               <img
-                src={retroImage2}
+                src={retroImage2} loading="lazy"
                 alt="Retro Nalgene design"
                 className="w-full h-auto lg:h-[476px] object-cover"
               />
             </div>
             <div className="pair-item flex-1 overflow-hidden">
               <img
-                src={retroImage1}
+                src={retroImage1} loading="lazy"
                 alt="Retro Nalgene design"
                 className="w-full h-auto lg:h-[476px] object-cover"
               />
@@ -300,14 +300,14 @@ export default function CaseStudyNalgene() {
         <div className="image-pair grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           <div className="pair-item overflow-hidden">
             <img
-              src={bottleImage1}
+              src={bottleImage1} loading="lazy"
               alt="Nalgene 75th Anniversary bottle"
               className="parallax-image w-full h-auto object-cover"
             />
           </div>
           <div className="pair-item overflow-hidden">
             <img
-              src={bottleImage2}
+              src={bottleImage2} loading="lazy"
               alt="Nalgene 75th Anniversary bottle"
               className="parallax-image w-full h-auto object-cover"
             />

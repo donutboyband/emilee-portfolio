@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { TransitionLink } from "./PageTransition";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLazyAutoplay } from "../hooks/useLazyAutoplay";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -36,6 +37,13 @@ export default function AdditionalDesignStudies() {
   const containerRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
   const sectionsRef = useRef<HTMLDivElement>(null);
+  const sofwaveVideo1Ref = useRef<HTMLVideoElement>(null);
+  const sofwaveVideo2Ref = useRef<HTMLVideoElement>(null);
+  const lagosVideoRef = useRef<HTMLVideoElement>(null);
+
+  useLazyAutoplay(sofwaveVideo1Ref);
+  useLazyAutoplay(sofwaveVideo2Ref);
+  useLazyAutoplay(lagosVideoRef);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -133,7 +141,8 @@ export default function AdditionalDesignStudies() {
           <div className="px-6 md:px-10 space-y-4">
             <div className="section-media aspect-[16/9] overflow-hidden">
               <video
-                autoPlay
+                ref={sofwaveVideo1Ref}
+                preload="metadata"
                 loop
                 muted
                 playsInline
@@ -150,7 +159,8 @@ export default function AdditionalDesignStudies() {
           </div>
             <div className="section-media aspect-[16/9] overflow-hidden">
               <video
-                autoPlay
+                ref={sofwaveVideo2Ref}
+                preload="metadata"
                 loop
                 muted
                 playsInline
@@ -295,7 +305,8 @@ export default function AdditionalDesignStudies() {
         <section className="project-section pb-16">
           <div className="section-media w-full aspect-[16/9] overflow-hidden">
               <video
-                autoPlay
+                ref={lagosVideoRef}
+                preload="metadata"
                 loop
                 muted
                 playsInline

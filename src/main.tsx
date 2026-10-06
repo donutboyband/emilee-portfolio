@@ -10,7 +10,8 @@ import './index.css'
 import { routeTree } from './routeTree.gen'
 
 // Create a new router instance
-const router = createRouter({ routeTree })
+// Preload a route's code on link hover/focus so split chunks are ready before the transition
+const router = createRouter({ routeTree, defaultPreload: 'intent' })
 
 // Register the router instance for type safety
 declare module '@tanstack/react-router' {
