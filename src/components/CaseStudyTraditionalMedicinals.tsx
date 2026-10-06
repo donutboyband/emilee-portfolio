@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TransitionLink } from "./PageTransition";
 import VideoPlayer from "./VideoPlayer";
 import gsap from "gsap";
@@ -12,6 +12,93 @@ const mmTwo = "/assets/videos/mm_two.mp4"
 const heroImage = "/assets/343cab8934af33e34f9a29a7629c76689057ac57.webp";
 const lifestyleImage = "/assets/cf65c10e851254b63f64e0ca84ff0d8586e0add1.webp";
 const starIcon = "/assets/027e5bddce9a815b7c52f040591889f3a0f50dbe.svg";
+// YouTube spots (first entry is featured)
+const youtubeVideos = [
+  { id: "9YbrO_UZSUw", title: "Where Wisdom Meets Wellness" },
+  { id: "BFQh09MBktM", title: "Meet Throat Coat® Lozenges" },
+  // No maxres thumbnail exists for this one; sddefault's letterboxing is cropped by object-cover
+  { id: "wyoB5ImDFvo", title: "Sore Throat? There's a Tea for That", posterSize: "sddefault" },
+];
+
+function YouTubeSpot({
+  id,
+  title,
+  index,
+  featured = false,
+  posterSize = "maxresdefault",
+}: {
+  id: string;
+  title: string;
+  index: number;
+  featured?: boolean;
+  posterSize?: string;
+}) {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const number = String(index + 1).padStart(2, "0");
+
+  return (
+    <figure className="video-reveal group flex flex-col h-full">
+      <div
+        className={`relative w-full aspect-video overflow-hidden bg-black ${
+          featured ? "lg:aspect-auto lg:flex-1" : ""
+        }`}
+      >
+        {isPlaying ? (
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1`}
+            title={title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+            className="absolute inset-0 w-full h-full border-0"
+          />
+        ) : (
+          <button
+            type="button"
+            onClick={() => setIsPlaying(true)}
+            aria-label={`Play ${title}`}
+            className="absolute inset-0 w-full h-full cursor-pointer text-white"
+          >
+            <img
+              src={`https://i.ytimg.com/vi/${id}/${posterSize}.jpg`}
+              alt=""
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.04]"
+            />
+            <span className="absolute inset-0 bg-black/20 transition-colors duration-700 group-hover:bg-black/40" />
+            <span
+              className={`absolute flex items-center gap-3 text-[11px] tracking-[0.88px] uppercase ${
+                featured ? "left-6 bottom-6 md:left-8 md:bottom-8" : "left-5 bottom-5"
+              }`}
+            >
+              <span
+                className={`flex items-center justify-center rounded-full border border-white/80 transition-all duration-500 group-hover:bg-white group-hover:text-black ${
+                  featured ? "w-14 h-14" : "w-10 h-10"
+                }`}
+              >
+                <svg
+                  viewBox="0 0 10 12"
+                  className={featured ? "w-3 h-3.5 ml-0.5" : "w-2.5 h-3 ml-0.5"}
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M0 0l10 6-10 6z" />
+                </svg>
+              </span>
+              <span className="opacity-0 -translate-x-2 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0">
+                Play spot
+              </span>
+            </span>
+          </button>
+        )}
+      </div>
+      <figcaption className="mt-4 pt-3 border-t border-black/15 flex items-baseline gap-4 text-[11px] tracking-[0.88px] uppercase">
+        <span className="tabular-nums text-black/40">{number}</span>
+        <span className="flex-1">{title}</span>
+      </figcaption>
+    </figure>
+  );
+}
 
 export default function CaseStudyTraditionalMedicinals() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -168,6 +255,26 @@ export default function CaseStudyTraditionalMedicinals() {
       ref={containerRef}
       className="w-full bg-white font-[Helvetica_Neue,Helvetica,Arial,sans-serif]"
     >
+      {/* YouTube Spots Section */}
+      <section className="px-6 md:px-[42px] pt-10 md:pt-14 pb-12 md:pb-16">
+        <div className="fade-in flex items-baseline justify-between border-b border-black pb-3 mb-8 md:mb-10 text-[11px] tracking-[0.88px] uppercase">
+          <span>Traditional Medicinals — Spots</span>
+          <span className="tabular-nums">
+            ({String(youtubeVideos.length).padStart(2, "0")})
+          </span>
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-6 gap-y-10">
+          <div className="lg:col-span-8">
+            <YouTubeSpot {...youtubeVideos[0]} index={0} featured />
+          </div>
+          <div className="lg:col-span-4 flex flex-col gap-10 lg:gap-8">
+            {youtubeVideos.slice(1).map((video, i) => (
+              <YouTubeSpot key={video.id} {...video} index={i + 1} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="hero-section relative w-full h-[605px] overflow-hidden">
         <img
